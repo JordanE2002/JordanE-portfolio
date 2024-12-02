@@ -11,12 +11,46 @@
   flex-basis: 60%;
   padding: 40px 60px;
   background-color: red;
+  box-sizing: border-box;
 }
 
 .contact-right {
   flex-basis: 40%;
   padding: 40px;
   background: blue;
+  box-sizing: border-box;
+}
+
+.container h1 {
+  margin-bottom: 10px;
+}
+
+.input-row {
+  display: flex; /* Flexbox for two-column layout */
+  flex-wrap: wrap; /* Allow wrapping to the next row */
+  gap: 20px; /* Space between input fields */
+}
+
+.input-group {
+  flex-basis: calc(50% - 20px); /* Each input takes 50% width minus the gap */
+  box-sizing: border-box;
+}
+
+input[type=text], input[type=email] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 10px;
+  box-sizing: border-box;
+  resize: none;
 }
 
 /*# sourceMappingURL=contact.css.map */
