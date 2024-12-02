@@ -101,16 +101,9 @@ section {
 }
 
 .contact-left {
-  flex-basis: 60%;
+  width: 100%; /* Full width, since the right column is removed */
   padding: 40px 60px;
-  background-color: red;
-  box-sizing: border-box;
-}
-
-.contact-right {
-  flex-basis: 40%;
-  padding: 40px;
-  background: blue;
+  background-color: #a8f0ff;
   box-sizing: border-box;
 }
 
@@ -144,6 +137,26 @@ textarea {
   padding: 10px;
   box-sizing: border-box;
   resize: none;
+}
+
+label {
+  color: green;
+}
+
+button {
+  background: orange;
+  width: 100px;
+  border: none;
+  outline: none;
+  height: 35px;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+
+.contact-left h3 {
+  color: purple;
+  font-weight: 600;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

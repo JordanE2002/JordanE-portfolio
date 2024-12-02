@@ -9,90 +9,74 @@
 </head>
 <body>
 
-
-<!-- my sidebar -->
- 
-<!-- Do not know if i need the scheme or about page here, but here as a plaeholder-->
-
+<!-- Sidebar -->
 <nav class="sidebar">
     <a href="#home" class="sidebar-text"><h1>JE</h1></a>
     <a href="#projects" class="sidebar-text">My Projects</a>
     <a href="#contact" class="sidebar-text">Contact Me</a>
-
     <a href="#about" class="sidebar-text">About Me</a>
     <a href="#examples" class="sidebar-text">Coding Examples</a>
     <a href="#scheme" class="sidebar-text">SCS Scheme</a>
-
 </nav>
 
-<!-- Page div to keep everything in line for now -->
+<!-- Page div to keep everything in line -->
 <div id="main-content">
-    <!--The banner image and text -->
+    <!-- Banner image and text -->
     <section id="home" class="header">
         <div class="header-content">
-            <h1>Hello, i am Jordan English.</h1>
+            <h1>Hello, I am Jordan English.</h1>
             <p>This is my Portfolio</p>
         </div>
         <img src="images/sausage-dog.webp" alt="sausage-dog" class="banner-img">
     </section>
 
-    <!--My projects -->
-        <section id="projects">
+    <!-- Projects Section -->
+    <section id="projects">
         <h1>My Projects</h1>
         <p>My projects to be filled out later.</p>
     </section>
-    
 
+    <!-- Contact Section -->
+   
     <section id="contact">
-        <h1>Contact Me</h1>
-        <p>To be filled out later</p>
-    </section>
-
-
-
-
-
-    <div class="container">
-        <h1>Contact</h1>
+    <div class="contact-container">
+        <h1>Contact Form</h1>
         <div class="contact-box">
-            <!-- Left Column -->
-            <div class="contact-left">
-                <h3>Enter your details</h3>
-                <form>
 
+
+            <!-- Contact -->
+            <div class="contact-left">
+                <h3>Fill out your details</h3>
+                <form>
                     <div class="input-row">
                         <div class="input-group">
-                            <label>First name</label>
-                            <input type="text" placeholder="James">
+                            <label>First Name</label>
+                            <input type="text" placeholder="John">
                         </div>
                         <div class="input-group">
-                            <label>Last name</label>
-                            <input type="text" placeholder="Deem">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Doe">
                         </div>
                         <div class="input-group">
-                            <label>Email</label>
-                            <input type="email" placeholder="example@emaple.com">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="johndoe@example.com">
                         </div>
                         <div class="input-group">
                             <label>Subject</label>
-                            <input type="text" placeholder="Info">
+                            <input type="text" placeholder="Inquiry">
                         </div>
 
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="Your message here..."></textarea>
 
-                         <label>Message</label>
-                        <textarea rows="5"></textarea>
-                        
-                        
-                            
-                        
+                        <button type="submit">Send Message</button>
                     </div>
                 </form>
-            </div>
-
-            <!-- Right Column -->
-            <div class="contact-right">
-                <h3>Reach us</h3>
+            </section>
             </div>
         </div>
     </div>
 </div>
+
+</body>
+</html>

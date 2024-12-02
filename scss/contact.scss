@@ -1,4 +1,4 @@
-.container {
+.contact-container {
     width: 80%;
     margin: 50px auto;
 }
@@ -8,16 +8,9 @@
 }
 
 .contact-left {
-    flex-basis: 60%;
+    width: 100%;  
     padding: 40px 60px;
-    background-color: red;
-    box-sizing: border-box;
-}
-
-.contact-right {
-    flex-basis: 40%;
-    padding: 40px;
-    background: blue;
+    background-color: #a8f0ff;
     box-sizing: border-box;
 }
 
@@ -26,9 +19,9 @@
 }
 
 .input-row {
-    display: flex;              /* Flexbox for two-column layout */
-    flex-wrap: wrap;            /* Allow wrapping to the next row */
-    gap: 20px;                  /* Space between input fields */
+    display: flex;          
+    flex-wrap: wrap;            
+    gap: 20px;                  
 }
 
 .input-group {
@@ -51,4 +44,24 @@ textarea {
     padding: 10px;
     box-sizing: border-box;
     resize: none;
+}
+
+label {
+    color: green;
+}
+
+button {
+    background: orange;
+    width: 100px;
+    border: none;
+    outline: none;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.contact-left h3 {
+    color: purple;
+    font-weight: 600;
+    margin-bottom: 30px;
 }
