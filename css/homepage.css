@@ -1,3 +1,56 @@
+/* Keeps everything in line for now */
+#main-content {
+  margin-left: 120px;
+  flex: 1;
+}
 
+/* Trying to prevent overlapping */
+section {
+  padding: 50px 20px;
+  background-color: white;
+  color: black;
+  scroll-margin-top: 120px;
+}
+
+/* Header/Home section */
+.header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* IImage for the header */
+.banner-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Text over the image */
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.header h1 {
+  font-size: 48px;
+  margin: 0;
+  color: white;
+}
+
+.header p {
+  font-size: 24px;
+  margin-top: 10px;
+  color: white;
+}
 
 /*# sourceMappingURL=homepage.css.map */
