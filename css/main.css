@@ -91,17 +91,14 @@ section {
   color: white;
 }
 
-.container {
+.contact-container {
   width: 80%;
   margin: 50px auto;
 }
 
 .contact-box {
   display: flex;
-}
-
-.contact-left {
-  width: 100%; /* Full width, since the right column is removed */
+  width: 100%;
   padding: 40px 60px;
   background-color: #a8f0ff;
   box-sizing: border-box;
@@ -112,35 +109,30 @@ section {
 }
 
 .input-row {
-  display: flex; /* Flexbox for two-column layout */
-  flex-wrap: wrap; /* Allow wrapping to the next row */
-  gap: 20px; /* Space between input fields */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .input-group {
-  flex-basis: calc(50% - 20px); /* Each input takes 50% width minus the gap */
-  box-sizing: border-box;
+  flex-basis: calc(50% - 20px);
 }
 
 input[type=text], input[type=email] {
   width: 100%;
   padding: 10px;
   border: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid white;
   box-sizing: border-box;
 }
 
 textarea {
-  width: 100%;
-  border: 1px solid #ccc;
+  width: 98%;
+  border: 1px solid white;
   outline: none;
   padding: 10px;
   box-sizing: border-box;
   resize: none;
-}
-
-label {
-  color: green;
 }
 
 button {
