@@ -15,4 +15,41 @@ body {
   color: black;
 }
 
+@media (max-width: 768px) {
+  /* Hide my left sidebar */
+  .sidebar {
+    visibility: hidden;
+  }
+  /* Make my image take the slider area top*/
+  .banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 0;
+  }
+  /* Adjust header text */
+  .header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+  }
+  .header h1 {
+    font-size: 36px;
+  }
+  .header p {
+    font-size: 18px;
+  }
+  /* Males the margin seen left 0 to make the image take that area */
+  #main-content {
+    margin-left: 0;
+  }
+}
+
 /*# sourceMappingURL=layout.css.map */
