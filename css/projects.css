@@ -1,47 +1,42 @@
-/* Flexbox container */
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Projects Container */
 .projects-container {
-  position: relative;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
 }
 
+/* Each project item */
 .projects-item {
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 30%;
   overflow: hidden;
-  position: relative;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Image fills the entire container */
-.project-image img {
+.projects-item img {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
-.projects-item h3, .projects-item p {
-  margin: 10px 0;
-}
-
-.service-flexbox-item h3 {
+.projects-item h3 {
   font-size: 1.2rem;
   font-weight: bold;
-  color: black;
+  color: #333645;
 }
 
-.service-flexbox-item p {
-  font-size: 1rem;
-  color: #555;
-}
-
-/* Hover effect */
-.service-flexbox-item:hover {
+/* Hover Effect */
+.projects-item:hover {
   transform: translateY(-10px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   cursor: pointer;
