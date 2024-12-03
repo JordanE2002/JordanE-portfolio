@@ -14,8 +14,9 @@ body {
 
 /* Each project item */
 .projects-item {
-    background-color: white;
+    background-color: #a8f0ff;
     border-radius: 8px;
+
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 30%;
     overflow: hidden;
@@ -29,11 +30,13 @@ body {
     object-fit: cover;
 }
 
-.projects-item h3 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #333645;
+
+.projects-item h3{
+
+color: orange;
+
 }
+
 
 /* Hover Effect */
 .projects-item:hover {

@@ -99,7 +99,7 @@ body {
 
 /* Each project item */
 .projects-item {
-  background-color: white;
+  background-color: #a8f0ff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 30%;
@@ -115,9 +115,7 @@ body {
 }
 
 .projects-item h3 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #333645;
+  color: orange;
 }
 
 /* Hover Effect */
