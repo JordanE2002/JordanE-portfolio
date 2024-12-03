@@ -84,7 +84,7 @@ section {
 }
 
 /* Flexbox container */
-.service-flexbox-container {
+.projects-container {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -92,15 +92,14 @@ section {
   justify-content: center;
 }
 
-/* Flexbox item */
-.service-flexbox-item {
-  background-color: var(--default-white);
+.projects-item {
+  background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 30%;
   overflow: hidden;
   position: relative;
-  text-align: center; /* Centers text below the image */
+  text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
