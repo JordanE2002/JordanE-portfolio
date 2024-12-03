@@ -44,6 +44,7 @@ textarea {
 
 button {
     background: orange;
+    font-weight: bold;
     width: 100px;
     border: none;
     outline: none;
@@ -52,8 +53,12 @@ button {
     margin-top: 20px;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 .contact-left h3 {
-    color: purple;
+    color: black;
     font-weight: 600;
     margin-bottom: 30px;
 }

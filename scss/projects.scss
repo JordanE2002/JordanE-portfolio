@@ -33,7 +33,7 @@ body {
 
 .projects-item h3{
 
-color: orange;
+color: black;
 
 }
 
@@ -41,6 +41,8 @@ color: orange;
 /* Hover Effect */
 .projects-item:hover {
     transform: translateY(-10px);
+    text-decoration: underline;
+    
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     cursor: pointer;
 }
