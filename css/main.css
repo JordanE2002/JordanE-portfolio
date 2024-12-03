@@ -208,7 +208,9 @@ body {
   background-color: #a8f0ff;
   color: black;
   position: fixed;
-  height: 100%;
+  top: 0; /* Ensures the sidebar is at the top */
+  left: 0;
+  height: 100vh; /* Full viewport height */
   padding-top: 20px;
   text-align: center;
   z-index: 1000;
@@ -253,7 +255,7 @@ section {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh; /* Makes the banner image fill the entire viewport */
   object-fit: cover;
   z-index: 0;
 }
