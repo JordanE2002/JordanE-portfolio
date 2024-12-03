@@ -187,7 +187,7 @@ button:hover {
   margin-bottom: 30px;
 }
 
-/* General Layout for the body */
+/*Genral layout for the body*/
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -196,91 +196,12 @@ body {
   flex-direction: column;
 }
 
-/* Media queries for smaller screens */
-@media (max-width: 768px) {
-  /* Sidebar */
-  .sidebar {
-    width: 80px; /* Shrink sidebar for smaller screens */
-  }
-  #main-content {
-    margin-left: 80px; /* Adjust main content area */
-  }
-  /* Header */
-  .header {
-    height: 80vh; /* Adjust the height of the header */
-  }
-  .banner-img {
-    height: 80vh; /* Adjust banner image height */
-  }
-  .header h1 {
-    font-size: 30px; /* Make the header text smaller */
-  }
-  .header p {
-    font-size: 18px; /* Make the subheader text smaller */
-  }
-  /* Projects Section */
-  .projects-item {
-    width: 45%; /* Adjust project item width */
-  }
-  .projects-item img {
-    height: 150px; /* Make images smaller */
-  }
-  /* Contact Section */
-  .contact-box {
-    flex-direction: column; /* Stack input fields */
-    padding: 30px 40px;
-  }
-  .input-row {
-    gap: 10px;
-  }
-  .input-group {
-    flex-basis: 100%; /* Make inputs fill the width */
-  }
-  button {
-    width: auto; /* Adjust button width */
-  }
-}
-@media (max-width: 480px) {
-  /* Sidebar */
-  .sidebar {
-    width: 60px; /* Further shrink sidebar for very small screens */
-  }
-  #main-content {
-    margin-left: 60px; /* Adjust main content area */
-  }
-  /* Header */
-  .header {
-    height: 70vh; /* Adjust header height even further */
-  }
-  .banner-img {
-    height: 70vh; /* Adjust banner image height */
-  }
-  .header h1 {
-    font-size: 24px; /* Make header text smaller */
-  }
-  .header p {
-    font-size: 16px; /* Make subheader text smaller */
-  }
-  /* Projects Section */
-  .projects-item {
-    width: 90%; /* Make project items take more width */
-  }
-  .projects-item img {
-    height: 120px; /* Smaller images */
-  }
-  /* Contact Section */
-  .contact-box {
-    padding: 20px 30px; /* Adjust padding */
-  }
-  .input-row {
-    gap: 5px;
-  }
-  .input-group {
-    flex-basis: 100%; /* Inputs take full width */
-  }
-  button {
-    width: 100%; /* Make the button fill the width */
-  }
+.title-centered {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: black;
 }
 
 /*# sourceMappingURL=main.css.map */
