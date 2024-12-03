@@ -1,72 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jordan's Portfolio</title>
-    <link rel="stylesheet" href="css/main.css"> 
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 </head>
+
 <body>
-
-<!-- Sidebar -->
-<nav class="sidebar">
-    <div>
-        <a href="index.html" class="sidebar-text"><h1>JE</h1></a>
-    </div>
-    <a href="#projects" class="sidebar-text">My Projects</a>
-    <a href="#contact" class="sidebar-text">Contact Me</a>
-    <div>
-        <a href="about-me.html" class="sidebar-text">About Me</a>
-    </div>
-    <a href="coding-examples.html" class="sidebar-text">Coding Examples</a>
-    <a href="scheme.html" class="sidebar-text">SCS Scheme</a>
-</nav>
-
-<!-- Main Content -->
-<div id="main-content">
-    <!-- Banner Section -->
-    <section id="home" class="header">
-        <div class="header-content">
-            <h1>Hello, I am Jordan English.</h1>
-            <p>This is my Portfolio</p>
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <div>
+            <a href="index.html" class="sidebar-text">
+                <h1>JE</h1>
+            </a>
         </div>
-        <img src="images/sausage-dog.webp" alt="sausage-dog" class="banner-img">
-    </section>
+        <a href="#projects" class="sidebar-text">My Projects</a>
+        <a href="#contact" class="sidebar-text">Contact Me</a>
+        <div>
+            <a href="about-me.html" class="sidebar-text">About Me</a>
+        </div>
+        <a href="coding-examples.html" class="sidebar-text">Coding Examples</a>
+        <a href="scheme.html" class="sidebar-text">SCS Scheme</a>
+    </nav>
 
+    <!-- Page Content -->
+    <div id="main-content">
+        <!-- Header -->
+        <section id="home" class="header">
+            <div class="header-content">
+                <h1>Hello, I am Jordan English.</h1>
+                <p>This is my Portfolio</p>
+            </div>
+            <img src="images/sausage-dog.webp" alt="sausage-dog" class="banner-img">
+        </section>
 
+        <!-- Projects Section -->
+        <section id="projects">
+            <h1 class="title-centered">My Projects</h1>
+            <div class="service-flexbox-container">
+                <div class="service-flexbox-item">
+                    <div class="service-flexbox-logo">
+                        <img src="images/sausage-dog.webp" alt="Project Image">
+                        <h3>Project 1: Please view my work</h3>
+                    </div>
+                </div>
+                <div class="service-flexbox-item">
+                    <div class="service-flexbox-logo">
+                        <img src="images/sausage-dog.webp" alt="Project Image">
+                        <h3>Project 2: Please view my work</h3>
+                    </div>
+                </div>
+                <div class="service-flexbox-item">
+                    <div class="service-flexbox-logo">
+                        <img src="images/Testimg.webp" alt="Project Image">
+                        <h3>Project 3: Please view my work</h3>
+                    </div>
+                </div>
+                <div class="service-flexbox-item">
+                    <div class="service-flexbox-logo">
+                        <img src="images/sausage-dog.webp" alt="Project Image">
+                        <h3>Project 4: Please view my work</h3>
+                    </div>
+                </div>
 
+                <div class="service-flexbox-item">
+                    <div class="service-flexbox-logo">
+                        <img src="images/Testimg.webp" alt="Project Image">
+                        <h3>Project 5: Please view my work</h3>
+                    </div>
+                </div>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="contact-container">
-            <h1>Contact Form</h1>
-            <div class="contact-box">
-                <div class="contact-left">
-                    <h3>Fill out your details</h3>
-                    <form>
-                        <div class="input-row">
-                            <div class="input-group">
-                                <input type="text" placeholder="First name">
-                            </div>
-                            <div class="input-group">
-                                <input type="text" placeholder="Last name">
-                            </div>
-                            <div class="input-group">
-                                <input type="email" placeholder="Email">
-                            </div>
-                            <div class="input-group">
-                                <input type="text" placeholder="Subject">
-                            </div>
-                            <textarea rows="5" placeholder="Message"></textarea>
-                            <button type="submit">Send</button>
-                        </div>
-                    </form>
+                <div class="service-flexbox-item">
+                    <div class="service-flexbox-logo">
+                        <img src="images/Testimg.webp" alt="Project Image">
+                        <h3>Project 6: Please view my work</h3>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-</div>
+        <!-- Contact Section -->
+        <section id="contact">
+            <h1 class="title-centered">Contact Form</h1>
+            <div class="contact-container">
+                <div class="contact-box">
+                    <div class="contact-left">
+                        <h3>Fill out your details</h3>
+                        <form>
+                            <div class="input-row">
+                                <div class="input-group">
+                                    <input type="text" placeholder="First name">
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" placeholder="Last name">
+                                </div>
+                                <div class="input-group">
+                                    <input type="email" placeholder="Email">
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" placeholder="Subject">
+                                </div>
+                                <textarea rows="5" placeholder="Message"></textarea>
+                                <button type="submit">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
+
 </html>

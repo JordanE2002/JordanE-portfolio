@@ -11,10 +11,6 @@
   box-sizing: border-box;
 }
 
-.container h1 {
-  margin-bottom: 10px;
-}
-
 .input-row {
   display: flex;
   flex-wrap: wrap;
