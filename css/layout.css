@@ -141,6 +141,62 @@ body {
     color: black;
     margin-top: 10px;
   }
+  /* --- Contact Section --- */
+  #contact {
+    padding: 20px;
+  }
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*Just the box decorations */
+  .contact-box {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    box-sizing: border-box;
+    border: 1px solid silver;
+    border-radius: 10px;
+    background-color: #a8f0ff;
+    color: black;
+  }
+  /* input boxes styles */
+  .input-row {
+    display: flex;
+    flex-direction: column;
+  }
+  /*Space between the fields */
+  .input-group {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  /*Boxes layout */
+  .input-group input,
+  .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  /* Textarea details */
+  .input-group textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  /* Button details */
+  button {
+    background: orange;
+    font-weight: bold;
+    width: 100px;
+    border: none;
+    outline: none;
+    height: 35px;
+    border-radius: 30px;
+    align-self: center;
+    margin-top: 20px;
+  }
 }
 
 /*# sourceMappingURL=layout.css.map */
