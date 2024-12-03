@@ -196,11 +196,19 @@ button:hover {
   height: 200px;
 }
 
+.HTML h3 {
+  text-align: center;
+}
+
 .CSS {
   background-color: yellow;
   float: right;
   width: 50%;
   height: 200px;
+}
+
+.CSS h3 {
+  text-align: center;
 }
 
 .JAVA {
@@ -210,11 +218,19 @@ button:hover {
   height: 200px;
 }
 
+.JAVA h3 {
+  text-align: center;
+}
+
 .PHP {
   background-color: blue;
   float: right;
   width: 50%;
   height: 200px;
+}
+
+.PHP h3 {
+  text-align: center;
 }
 
 /*Genral layout for the body*/
@@ -415,6 +431,45 @@ body {
     border-radius: 30px;
     align-self: center;
     margin-top: 20px;
+  }
+}
+@media (max-width: 768px) {
+  /* Box styles */
+  .HTML {
+    background-color: red;
+    float: left;
+    width: 50%;
+    height: 200px;
+  }
+  .HTML h3 {
+    text-align: center;
+  }
+  .CSS {
+    background-color: yellow;
+    float: right;
+    width: 50%;
+    height: 200px;
+  }
+  .CSS h3 {
+    text-align: center;
+  }
+  .JAVA {
+    background-color: green;
+    float: left;
+    width: 50%;
+    height: 200px;
+  }
+  .JAVA h3 {
+    text-align: center;
+  }
+  .PHP {
+    background-color: blue;
+    float: right;
+    width: 50%;
+    height: 200px;
+  }
+  .PHP h3 {
+    text-align: center;
   }
 }
 
