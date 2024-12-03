@@ -1,0 +1,30 @@
+/* Box styles */
+.HTML {
+  background-color: red;
+  float: left;
+  width: 50%;
+  height: 200px;
+}
+
+.CSS {
+  background-color: yellow;
+  float: right;
+  width: 50%;
+  height: 200px;
+}
+
+.JAVA {
+  background-color: green;
+  float: left;
+  width: 50%;
+  height: 200px;
+}
+
+.PHP {
+  background-color: blue;
+  float: right;
+  width: 50%;
+  height: 200px;
+}
+
+/*# sourceMappingURL=coding-example.css.map */

@@ -4,6 +4,7 @@
 #main-content {
     margin-left: 120px; 
     flex: 1;
+    padding-bottom: 50px; /* Adds space at the bottom */
 }
 
 /* Trying to prevent overlapping */
@@ -21,7 +22,7 @@ section {
     overflow: hidden;
 }
 
-/* IImage for the header */
+/* Image for the header */
 .banner-img {
     position: absolute;
     top: 0;

@@ -32,6 +32,7 @@
 #main-content {
   margin-left: 120px;
   flex: 1;
+  padding-bottom: 50px; /* Adds space at the bottom */
 }
 
 /* Trying to prevent overlapping */
@@ -49,7 +50,7 @@ section {
   overflow: hidden;
 }
 
-/* IImage for the header */
+/* Image for the header */
 .banner-img {
   position: absolute;
   top: 0;
@@ -185,6 +186,35 @@ button:hover {
   color: black;
   font-weight: 600;
   margin-bottom: 30px;
+}
+
+/* Box styles */
+.HTML {
+  background-color: red;
+  float: left;
+  width: 50%;
+  height: 200px;
+}
+
+.CSS {
+  background-color: yellow;
+  float: right;
+  width: 50%;
+  height: 200px;
+}
+
+.JAVA {
+  background-color: green;
+  float: left;
+  width: 50%;
+  height: 200px;
+}
+
+.PHP {
+  background-color: blue;
+  float: right;
+  width: 50%;
+  height: 200px;
 }
 
 /*Genral layout for the body*/
