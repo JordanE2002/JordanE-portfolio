@@ -240,5 +240,96 @@ body {
     margin-left: 0;
   }
 }
+@media (max-width: 768px) and (max-width: 768px) {
+  /* For the Contact Section */
+  .contact-container {
+    padding: 20px;
+  }
+  .contact-box {
+    width: 100%; /* Ensures the contact box is full width on smaller screens */
+    padding: 20px; /* Reduce padding on smaller screens */
+    box-sizing: border-box;
+    border: none;
+    border-radius: 10px;
+    background-color: #a8f0ff; /* Same as sidebar color */
+    color: black;
+  }
+  .input-group {
+    width: 100%; /* Ensures input fields take up the full width */
+    margin-bottom: 12px; /* Smaller margin for input fields */
+  }
+  /* Make the textarea and input fields more responsive */
+  .input-group input,
+  .input-group textarea {
+    padding: 12px;
+    font-size: 16px; /* Adjust text size for smaller screens */
+    margin-bottom: 10px; /* Less space between fields */
+  }
+  /* Adjust Button */
+  button {
+    padding: 12px; /* Less padding on button */
+    font-size: 14px;
+  }
+  /* For Projects Section */
+  .projects-container {
+    flex-direction: column; /* Stack items vertically for small screens */
+    align-items: center;
+  }
+  .projects-item {
+    width: 90%; /* Make each project item take up more space */
+    margin-bottom: 20px;
+  }
+  .projects-item img {
+    width: 100%; /* Ensure the project images scale well */
+    height: auto;
+  }
+  /* Adjust header text */
+  .header h1 {
+    font-size: 36px; /* Adjust font size for smaller screens */
+  }
+  .header p {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+  /* Banner image should still take full viewport */
+  .banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    object-fit: cover;
+    z-index: 0;
+  }
+}
+@media (max-width: 768px) {
+  /* --- Projects  section--- */
+  #projects {
+    padding: 20px;
+  }
+  /*Makes the boxes stacked on smaller screens*/
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*Add limitts for better viewsing */
+  .projects-item {
+    width: 80%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  /*Makes images the same ratio and looks the same as the wider screens  */
+  .projects-item img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners to images */
+  }
+  /*Makes the h3 have a smaller title */
+  .projects-item h3 {
+    font-size: 18px;
+    color: black;
+    margin-top: 10px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
