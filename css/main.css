@@ -104,14 +104,13 @@ section {
 }
 
 /* Image fills the entire container */
-.service-flexbox-logo img {
+.project-image img {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
-/* Headings and paragraph styling */
-.service-flexbox-item h3, .service-flexbox-item p {
+.projects-item h3, .projects-item p {
   margin: 10px 0;
 }
 
