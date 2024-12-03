@@ -1,4 +1,4 @@
-/* General Layout for the body */
+/*Genral layout for the body*/
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -7,60 +7,12 @@ body {
   flex-direction: column;
 }
 
-/* Media queries for smaller screens */
-@media (max-width: 768px) {
-  /* Sidebar */
-  .sidebar {
-    width: 120px; /* Increase width of the sidebar */
-    font-size: 22px; /* Increase text size in the sidebar */
-  }
-  .sidebar .sidebar-text {
-    padding: 25px; /* Increase padding in the sidebar links */
-  }
-  #main-content {
-    margin-left: 120px; /* Adjust the content to fit the expanded sidebar */
-  }
-  /* Header */
-  .header {
-    height: 90vh; /* Make the header height larger */
-  }
-  .banner-img {
-    height: 90vh; /* Make the banner image larger */
-    object-fit: cover; /* Ensure the banner image covers the area properly */
-  }
-  .header h1 {
-    font-size: 50px; /* Make the header text larger */
-  }
-  .header p {
-    font-size: 28px; /* Make the subheader text larger */
-  }
-}
-@media (max-width: 480px) {
-  /* Sidebar */
-  .sidebar {
-    width: 150px; /* Further increase sidebar size for smaller screens */
-    font-size: 24px; /* Increase text size for the sidebar */
-  }
-  .sidebar .sidebar-text {
-    padding: 30px; /* Increase padding for sidebar links */
-  }
-  #main-content {
-    margin-left: 150px; /* Adjust content to fit larger sidebar */
-  }
-  /* Header */
-  .header {
-    height: 100vh; /* Make the header fill the full viewport height */
-  }
-  .banner-img {
-    height: 100vh; /* Make the banner image fill the full viewport height */
-    object-fit: cover; /* Ensure the banner image covers the area properly */
-  }
-  .header h1 {
-    font-size: 60px; /* Make header text even larger */
-  }
-  .header p {
-    font-size: 32px; /* Make subheader text larger */
-  }
+.title-centered {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: black;
 }
 
 /*# sourceMappingURL=layout.css.map */
