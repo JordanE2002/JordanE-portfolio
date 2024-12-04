@@ -440,9 +440,6 @@ body {
 }
 @media (max-width: 768px) {
   /* --- Projects  section--- */
-  #projects {
-    padding: 20px;
-  }
   /*Makes the boxes stacked on smaller screens*/
   .projects-container {
     display: flex;
