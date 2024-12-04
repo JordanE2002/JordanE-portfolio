@@ -521,8 +521,8 @@ body {
     margin-top: 20px;
   }
 }
+/*Media query for scheme section*/
 @media (max-width: 768px) {
-  /* Box styles */
   .HTML {
     background-color: red;
     width: 100%;
