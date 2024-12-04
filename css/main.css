@@ -132,12 +132,14 @@ body {
 
 .contact-box {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  padding: 40px 60px;
+  padding: 20px;
   background-color: #a8f0ff;
   box-sizing: border-box;
 }
 
+/* Input row: Responsive stacking */
 .input-row {
   display: flex;
   flex-wrap: wrap;
@@ -148,7 +150,9 @@ body {
   flex-basis: calc(50% - 20px);
 }
 
-input[type=text], input[type=email] {
+/* Input and Textarea */
+input[type=text],
+input[type=email] {
   width: 100%;
   padding: 10px;
   border: none;
@@ -159,14 +163,15 @@ input[type=text], input[type=email] {
 
 textarea {
   width: 98%;
-  border: 1px solid white;
-  outline: none;
-  padding: 10px;
-  box-sizing: border-box;
   resize: none;
+  padding: 10px;
+  border: none;
   font-family: "Times New Roman", Times, serif;
+  border-bottom: 1px solid white;
+  box-sizing: border-box;
 }
 
+/* Button */
 button {
   background: orange;
   font-weight: bold;
@@ -176,12 +181,15 @@ button {
   height: 35px;
   border-radius: 30px;
   margin-top: 20px;
+  align-self: center;
 }
 
+/* Hover effect */
 button:hover {
   cursor: pointer;
 }
 
+/* Contact text styling */
 .contact-text h3 {
   color: black;
   font-weight: 600;
@@ -459,9 +467,9 @@ body {
   }
   /*Makes images the same ratio and looks the same as the wider screens  */
   .projects-item img {
-    width: 100%; /* Make images responsive */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Optional: Add rounded corners to images */
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
   }
   /*Makes the h3 have a smaller title */
   .projects-item h3 {
@@ -470,9 +478,6 @@ body {
     margin-top: 10px;
   }
   /* --- Contact Section --- */
-  #contact {
-    padding: 20px;
-  }
   .contact-container {
     display: flex;
     flex-direction: column;

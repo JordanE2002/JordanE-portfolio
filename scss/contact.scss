@@ -5,26 +5,28 @@
 
 .contact-box {
     display: flex;
-    width: 100%;  
-    padding: 40px 60px;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
     background-color: #a8f0ff;
     box-sizing: border-box;
 }
 
-
-
-
+/* Input row: Responsive stacking */
 .input-row {
-    display: flex;          
-    flex-wrap: wrap;            
-    gap: 20px;                  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .input-group {
     flex-basis: calc(50% - 20px); 
 }
 
-input[type="text"], input[type="email"] {
+/* Input and Textarea */
+input[type="text"], 
+input[type="email"] 
+{
     width: 100%;
     padding: 10px;
     border: none;
@@ -35,15 +37,17 @@ input[type="text"], input[type="email"] {
 
 textarea {
     width: 98%;
-    border: 1px solid white;
-    outline: none;
-    padding: 10px;
-    box-sizing: border-box;
     resize: none;
+
+    padding: 10px;
+    border: none;
     font-family: 'Times New Roman', Times, serif;
+    border-bottom: 1px solid white;
+    box-sizing: border-box;
+
 }
 
-
+/* Button */
 button {
     background: orange;
     font-weight: bold;
@@ -53,14 +57,21 @@ button {
     height: 35px;
     border-radius: 30px;
     margin-top: 20px;
+    align-self: center;
 }
 
-button:hover{
+/* Hover effect */
+button:hover {
     cursor: pointer;
 }
 
+/* Contact text styling */
 .contact-text h3 {
     color: black;
     font-weight: 600;
     margin-bottom: 30px;
 }
+
+
+
+
