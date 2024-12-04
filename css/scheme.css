@@ -1,0 +1,78 @@
+/* Flexbox container for the case studies */
+.news-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Flexbox item styling */
+.news-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  background-color: var(--default-white);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid grey;
+}
+
+/* Heading styling */
+.news-item h3 {
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: inherit;
+}
+
+.news-item:nth-child(odd) h3 {
+  color: #db8c0d;
+}
+
+/* Paragraph styling */
+.news-item p {
+  font-weight: 600;
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  font-family: var(--poppins);
+  letter-spacing: 0.4px;
+}
+
+/* Buttons */
+.news-button {
+  font-family: var(--poppins);
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  color: var(--default-white);
+  background-color: #db8c0d;
+  border: none;
+  font-weight: 400;
+}
+
+/* Grey line */
+.horizontial-line {
+  width: 80%;
+  height: 1px;
+  background-color: #ddd;
+  margin: 15px auto;
+  border: none;
+}
+
+/*# sourceMappingURL=scheme.css.map */
