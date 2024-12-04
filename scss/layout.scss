@@ -241,54 +241,40 @@ button {
 
 
 @media (max-width: 768px) {
+
+
+
 /* Box styles */
 .HTML {
     background-color: red;
-    float: left;
-    width: 50%;
+    
+    width: 100%;
     height: 200px;
+ 
 }
 
-.HTML h3{
 
-    text-align: center;
-}
 
 .CSS {
-    background-color: yellow;
-    float: right;
-    width: 50%;
-    height: 200px;
+    margin-top: 10px;
+    width: 100%;
+
 }
 
-.CSS h3{
 
-    text-align: center;
-}
 
 .JAVA {
-    background-color: green;
-    float: left;
-    width: 50%;
-    height: 200px;
+margin-top: 10px;
+    width: 100%;
 }
 
-.JAVA h3{
 
-    text-align: center;
-}
 
 .PHP {
-    background-color: blue;
-    float: right;
-    width: 50%;
-    height: 200px;
+margin-top: 10px;
+    width: 100%;
 }
 
-.PHP h3{
-
-    text-align: center;
-}
 
 
 }
