@@ -396,57 +396,57 @@ body {
     padding: 20px;
   }
   .contact-box {
-    width: 100%; /* Ensures the contact box is full width on smaller screens */
-    padding: 20px; /* Reduce padding on smaller screens */
+    width: 100%;
+    padding: 20px;
     box-sizing: border-box;
     border: none;
     border-radius: 10px;
-    background-color: #a8f0ff; /* Same as sidebar color */
+    background-color: #a8f0ff;
     color: black;
   }
   .input-group {
-    width: 100%; /* Ensures input fields take up the full width */
-    margin-bottom: 12px; /* Smaller margin for input fields */
+    width: 100%;
+    margin-bottom: 12px;
   }
   /* Make the textarea and input fields more responsive */
   .input-group input,
   .input-group textarea {
     padding: 12px;
-    font-size: 16px; /* Adjust text size for smaller screens */
-    margin-bottom: 10px; /* Less space between fields */
+    font-size: 16px;
+    margin-bottom: 10px;
   }
   /* Adjust Button */
   button {
-    padding: 12px; /* Less padding on button */
+    padding: 12px;
     font-size: 14px;
   }
   /* For Projects Section */
   .projects-container {
-    flex-direction: column; /* Stack items vertically for small screens */
+    flex-direction: column;
     align-items: center;
   }
   .projects-item {
-    width: 90%; /* Make each project item take up more space */
+    width: 90%;
     margin-bottom: 20px;
   }
   .projects-item img {
-    width: 100%; /* Ensure the project images scale well */
+    width: 100%;
     height: auto;
   }
   /* Adjust header text */
   .header h1 {
-    font-size: 36px; /* Adjust font size for smaller screens */
+    font-size: 36px;
   }
   .header p {
-    font-size: 18px; /* Adjust font size for smaller screens */
+    font-size: 18px;
   }
   /* Banner image should still take full viewport */
   .banner-img {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw; /* Full width of the viewport */
-    height: 100vh; /* Full height of the viewport */
+    width: 100vw;
+    height: 100vh;
     object-fit: cover;
     z-index: 0;
   }
