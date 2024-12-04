@@ -22,9 +22,10 @@ body {
 
 @media (max-width: 768px) {
 
-    /* Hide my left sidebar */
+    /* Hide my left sidebar and not shown for a second when having to go*/
     .sidebar {
         visibility: hidden;
+        opacity: 0;
     }
 
     /* Make my image take the slider area top*/

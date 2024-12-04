@@ -25,7 +25,7 @@
   background-color: red;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
   transform: translateX(5px);
-  color: white;
+  color: #a8f0ff;
 }
 
 /* Keeps everything in line for now */
@@ -348,9 +348,10 @@ body {
 }
 
 @media (max-width: 768px) {
-  /* Hide my left sidebar */
+  /* Hide my left sidebar and not shown for a second when having to go*/
   .sidebar {
     visibility: hidden;
+    opacity: 0;
   }
   /* Make my image take the slider area top*/
   .banner-img {
