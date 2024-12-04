@@ -82,3 +82,15 @@
     margin: 15px auto; 
     border: none;
 }
+/* Responsive Design */
+@media (max-width: 768px) {
+    .news-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .news-item {
+        width: 80%; 
+        margin-bottom:10px; 
+    }
+}
