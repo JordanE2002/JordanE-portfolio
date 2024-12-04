@@ -248,7 +248,6 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   width: 30%;
   background-color: var(--default-white);
   padding: 15px;
@@ -256,7 +255,7 @@ button:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid grey;
+  border: 1px solid #a8f0ff;
 }
 
 /* Heading styling */
@@ -264,28 +263,31 @@ button:hover {
   margin-left: 0;
   margin-right: 0;
   text-align: center;
-  font-weight: 600;
-  font-size: 1rem;
+  font-weight: bold;
+  font-size: 2rem;
   line-height: 1.5rem;
-  font-family: inherit;
-}
-
-.news-item:nth-child(odd) h3 {
-  color: #db8c0d;
 }
 
 /* Paragraph styling */
 .news-item p {
-  font-weight: 600;
+  font-weight: 300;
   font-size: 0.8125rem;
   line-height: 1.375rem;
-  font-family: var(--poppins);
   letter-spacing: 0.4px;
+  align-items: center;
+}
+
+/* Paragraph styling */
+.news-item li {
+  font-weight: 300;
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  letter-spacing: 0.4px;
+  text-align: left;
 }
 
 /* Buttons */
 .news-button {
-  font-family: var(--poppins);
   letter-spacing: 0.4px;
   text-decoration: none;
   display: inline-block;
@@ -299,6 +301,7 @@ button:hover {
   background-color: #db8c0d;
   border: none;
   font-weight: 400;
+  margin: 10px auto;
 }
 
 /* Grey line */
