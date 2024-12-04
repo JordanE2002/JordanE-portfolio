@@ -1,5 +1,5 @@
 /* Flexbox container for the case studies */
-.news-container {
+.scheme-container {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -9,7 +9,7 @@
 }
 
 /* Flexbox item styling */
-.news-item {
+.scheme-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,7 +24,7 @@
 }
 
 /* Heading styling */
-.news-item h3 {
+.scheme-item h3 {
   margin-left: 0;
   margin-right: 0;
   text-align: center;
@@ -34,7 +34,7 @@
 }
 
 /* Paragraph styling */
-.news-item p {
+.scheme-item p {
   font-weight: 300;
   font-size: 0.8125rem;
   line-height: 1.375rem;
@@ -42,8 +42,8 @@
   align-items: center;
 }
 
-/* Paragraph styling */
-.news-item li {
+/* list styling */
+.scheme-item li {
   font-weight: 300;
   font-size: 0.8125rem;
   line-height: 1.375rem;
@@ -52,7 +52,7 @@
 }
 
 /* Buttons */
-.news-button {
+.scheme-button {
   letter-spacing: 0.4px;
   text-decoration: none;
   display: inline-block;
@@ -80,11 +80,11 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .news-container {
+  .scheme-container {
     flex-direction: column;
     align-items: center;
   }
-  .news-item {
+  .scheme-item {
     width: 80%;
     margin-bottom: 10px;
   }
