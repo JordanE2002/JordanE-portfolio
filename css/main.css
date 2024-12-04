@@ -154,6 +154,7 @@ input[type=text], input[type=email] {
   width: 100%;
   padding: 10px;
   border: none;
+  font-family: "Times New Roman", Times, serif;
   border-bottom: 1px solid white;
   box-sizing: border-box;
 }
@@ -165,6 +166,7 @@ textarea {
   padding: 10px;
   box-sizing: border-box;
   resize: none;
+  font-family: "Times New Roman", Times, serif;
 }
 
 button {
@@ -265,7 +267,7 @@ button:hover {
   text-align: center;
   font-weight: bold;
   font-size: 2rem;
-  line-height: 1.5rem;
+  line-height: 2.5rem;
 }
 
 /* Paragraph styling */
@@ -324,6 +326,10 @@ button:hover {
     margin-bottom: 10px;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 /*Genral layout for the body*/
 body {
   font-family: "Montserrat", sans-serif;
