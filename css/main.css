@@ -407,6 +407,15 @@ button:hover {
     margin-bottom: 10px;
   }
 }
+/*The footer bottom banner bit*/
+.footer-bottom {
+  background-color: green;
+  padding: 10px 0;
+  position: relative;
+  bottom: 100%;
+  text-align: center;
+}
+
 html {
   scroll-behavior: smooth;
 }
