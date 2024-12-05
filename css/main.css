@@ -196,6 +196,55 @@ button:hover {
   margin-bottom: 30px;
 }
 
+/* Flexbox container for the case studies */
+.about-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Flexbox item styling */
+.about-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  background-color: var(--default-white);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #a8f0ff;
+}
+
+/* Heading styling */
+.about-item h3 {
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+/* Paragraph styling */
+.about-item p {
+  font-weight: 300;
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  letter-spacing: 0.4px;
+  align-items: center;
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+}
+
 /* Box styles */
 .HTML {
   background-color: red;
