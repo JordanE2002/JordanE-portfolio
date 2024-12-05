@@ -192,6 +192,7 @@ body {
   button {
     background: orange;
     font-weight: bold;
+    text-align: center;
     width: 100px;
     border: none;
     outline: none;
