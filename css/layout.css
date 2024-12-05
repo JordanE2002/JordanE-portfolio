@@ -26,11 +26,8 @@ body {
     position: static;
   }
   .sidebar .sidebar-text, .sidebar-present {
-    font-size: 14px; /* Smaller font size */
-    padding: 10px; /* Reduce padding */
-  }
-  #main-content {
-    margin-left: 80px; /* Adjust main content position */
+    font-size: 14px;
+    padding: 10px;
   }
   /* Make my image take the slider area top*/
   .banner-img {
