@@ -15,7 +15,7 @@
 
 
 /* Sidebar text styling*/
-.sidebar .sidebar-text .sidebar-present {
+.sidebar .sidebar-text {
     display: block;
     padding: 20px;
     color: black;
@@ -24,13 +24,6 @@
     transition: all 0.3s ease; 
 }
 
-
-.sidebar-present{
-    color: aquamarine;
-background-color: gray;
-}
-
-
 /* Hover text styling when hover */
 .sidebar .sidebar-text:hover {
     background-color: red;  
@@ -38,8 +31,17 @@ background-color: gray;
     
 }
 
-/* Styles to know what page you are on*/
+/* Stles to know what page you are on*/
 
+.sidebar-present{
+    display: block;
+    padding: 20px;
+    color: aquamarine;
+background-color: gray;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease; 
+}
 
 .sidebar-present:hover{
     background-color: red;  

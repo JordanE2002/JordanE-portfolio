@@ -83,15 +83,3 @@
     margin: 15px auto; 
     border: none;
 }
-/* Responsive Design */
-@media (max-width: 768px) {
-    .scheme-container {
-        flex-direction: column; 
-        align-items: center; 
-    }
-
-    .scheme-item {
-        width: 80%; 
-        margin-bottom:10px; 
-    }
-}
