@@ -1,0 +1,1 @@
+The only thing i should add is a variable scss page, i would have added it but i am not even sure if i will use all the colors or fonts so thats why as a whole its been quite gneneric like colours pink, blue etc and mostly not like #cccddd for example
