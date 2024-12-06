@@ -11,7 +11,7 @@
 }
 
 /* Sidebar text styling*/
-.sidebar .sidebar-text {
+.sidebar .sidebar-text .sidebar-present {
   display: block;
   padding: 20px;
   color: black;
@@ -20,22 +20,18 @@
   transition: all 0.3s ease;
 }
 
+.sidebar-present {
+  color: aquamarine;
+  background-color: gray;
+}
+
 /* Hover text styling when hover */
 .sidebar .sidebar-text:hover {
   background-color: red;
   color: white;
 }
 
-.sidebar-present {
-  display: block;
-  padding: 20px;
-  color: aquamarine;
-  background-color: gray;
-  text-decoration: none;
-  font-size: 18px;
-  transition: all 0.3s ease;
-}
-
+/* Styles to know what page you are on*/
 .sidebar-present:hover {
   background-color: red;
   color: white;
@@ -56,7 +52,7 @@ section {
   scroll-margin-top: 120px;
 }
 
-/* Header/Home section */
+/* Header section */
 .header {
   position: relative;
   height: 100vh;
@@ -154,7 +150,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Input row: Responsive stacking */
 .input-row {
   display: flex;
   flex-wrap: wrap;
@@ -165,7 +160,7 @@ body {
   flex-basis: calc(50% - 20px);
 }
 
-/* Input and Textarea */
+/* Input styles*/
 input[type=text],
 input[type=email] {
   width: 100%;
@@ -186,7 +181,7 @@ textarea {
   box-sizing: border-box;
 }
 
-/* Button */
+/* Button styles*/
 button {
   background: orange;
   text-align: center;
@@ -205,6 +200,7 @@ button:hover {
   cursor: pointer;
 }
 
+/* Button style when clicked*/
 button:active {
   background-color: aquamarine;
 }
@@ -265,7 +261,7 @@ button:active {
   height: 100%;
 }
 
-/* Box styles */
+/* Box styles for differn't snippets*/
 .HTML {
   background-color: red;
   float: left;
