@@ -29,8 +29,8 @@
 .sidebar-present {
   display: block;
   padding: 20px;
-  color: pink;
-  background-color: green;
+  color: aquamarine;
+  background-color: gray;
   text-decoration: none;
   font-size: 18px;
   transition: all 0.3s ease;
@@ -205,6 +205,10 @@ button:hover {
   cursor: pointer;
 }
 
+button:active {
+  background-color: aquamarine;
+}
+
 /* Contact text styling */
 .contact-text h3 {
   color: black;
@@ -261,16 +265,6 @@ button:hover {
   height: 100%;
 }
 
-@media (max-width: 768px) {
-  .about-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .about-item {
-    width: 80%;
-    margin-bottom: 10px;
-  }
-}
 /* Box styles */
 .HTML {
   background-color: red;
@@ -409,7 +403,7 @@ button:hover {
 }
 /*The footer bottom banner bit*/
 .footer-bottom {
-  background-color: green;
+  background-color: aquamarine;
   padding: 10px 0;
   position: relative;
   bottom: 100%;
@@ -565,7 +559,7 @@ body {
     color: black;
     margin-top: 10px;
   }
-  /* --- Contact Section --- */
+  /* --- Contact section --- */
   .contact-container {
     display: flex;
     flex-direction: column;
@@ -614,6 +608,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 100px;
   }
 }
 /*Media query for scheme section*/
@@ -634,6 +629,28 @@ body {
   .PHP {
     margin-top: 10px;
     width: 100%;
+  }
+}
+/*About me*/
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-item {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+}
+/*Scheme */
+@media (max-width: 768px) {
+  .scheme-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .scheme-item {
+    width: 80%;
+    margin-bottom: 10px;
   }
 }
 

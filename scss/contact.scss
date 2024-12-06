@@ -59,11 +59,18 @@ button {
     border-radius: 30px;
     margin-top: 20px;
     align-self: center;
+
 }
 
 /* Hover effect */
 button:hover {
     cursor: pointer;
+
+}
+
+button:active{
+
+    background-color: aquamarine;
 }
 
 /* Contact text styling */

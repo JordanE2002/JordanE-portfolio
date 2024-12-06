@@ -63,6 +63,10 @@ button:hover {
   cursor: pointer;
 }
 
+button:active {
+  background-color: aquamarine;
+}
+
 /* Contact text styling */
 .contact-text h3 {
   color: black;
