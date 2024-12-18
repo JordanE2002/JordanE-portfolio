@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jordan's Portfolio</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="java/main.js">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 </head>
 
@@ -20,15 +21,11 @@
         <a href="index.html#projects" class="sidebar-text">My Projects</a>
         <a href="index.html#contact" class="sidebar-text">Contact Me</a>
         <div>
-
-
             <a href="about-me.html#about" class="sidebar-text">About Me</a>
         </div>
-        
         <div>
-        <a href="coding-examples.html#coding-examples" class="sidebar-text">Coding Examples</a>
+            <a href="coding-examples.html#coding-examples" class="sidebar-text">Coding Examples</a>
         </div>
-
         <a href="scheme.html#scheme" class="sidebar-text">SCS Scheme</a>
     </nav>
 
@@ -37,8 +34,8 @@
         <!-- Header -->
         <section id="home" class="header">
             <div class="header-content">
-                <h1>Hello, I am Jordan English.</h1>
-                <p>This is my Portfolio</p>
+                <h1 id="typewriter-text"></h1> <!-- This will display "Hello, I am Jordan English." -->
+                <p id="typewriter-text2"></p> <!-- This will display "This is my Portfolio." -->
             </div>
             <img src="images/sausage-dog.webp" alt="sausage-dog" class="banner-img">
         </section>
@@ -51,20 +48,14 @@
                     <img src="images/sausage-dog.webp" alt="Project 1">
                     <h3>Project 1: Please view my work</h3>
                 </div>
-
-
                 <div class="projects-item">
                     <img src="images/sausage-dog.webp" alt="Project 2">
                     <h3>Project 2: Please view my work</h3>
                 </div>
-
-
                 <div class="projects-item">
                     <img src="images/Testimg.webp" alt="Project 3">
                     <h3>Project 3: Please view my work</h3>
                 </div>
-
-                
                 <div class="projects-item">
                     <img src="images/sausage-dog.webp" alt="Project 4">
                     <h3>Project 4: Please view my work</h3>
@@ -102,7 +93,6 @@
                                     <input type="text" placeholder="Subject">
                                 </div>
                                 <textarea rows="5" placeholder="Message"></textarea>
-                                
                                 <button type="submit">Send</button>
                             </div>
                         </form>
@@ -112,16 +102,15 @@
         </section>
     </div>
 
-      
- <!-- Footer  -->
-<footer class="footer-bottom">
-
-    <div class="footer-banner">
+    <!-- Footer -->
+    <footer class="footer-bottom">
+        <div class="footer-banner">
             <p>&copy; Jordan English</p>
         </div>
-</footer>
+    </footer>
 
-
+    <!-- Script -->
+    <script src="java/main.js"></script>
 </body>
 
 </html>
