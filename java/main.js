@@ -54,3 +54,38 @@ document.addEventListener("DOMContentLoaded", function () {
     typewriter1(); // Starts the first typewriter effect
 });
 
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const sidebar = document.querySelector('.sidebar');
+
+    // Initially hide the sidebar on small screens
+    const updateSidebarVisibility = () => {
+        if (window.innerWidth <= 768) {
+            sidebar.classList.add('hidden'); // Add the 'hidden' class
+        } else {
+            sidebar.classList.remove('hidden'); // Show sidebar on larger screens
+        }
+    };
+
+    // Toggle sidebar visibility on icon click
+    menuToggle.addEventListener('click', () => {
+        sidebar.classList.toggle('hidden');
+    });
+
+    // Update sidebar visibility on window resize
+    window.addEventListener('resize', updateSidebarVisibility);
+
+    // Set initial visibility
+    updateSidebarVisibility();
+});

@@ -1,65 +1,109 @@
-
-
 /* Sidebar styles */
 .sidebar {
-    width: 120px;
+    width: 120px; /* Set width */
     background-color: #a8f0ff;
     color: black;
     position: fixed;
     height: 100%;
     padding-top: 20px;
     text-align: center;
-    z-index: 1000; 
+    z-index: 1000;
+    transform: translateX(0); 
+    transition: transform 0.3s ease, position 0.3s ease; 
 }
 
+/* Sidebar hidden styles */
+.sidebar.hidden {
+    transform: translateX(-150%); 
+    position: absolute; 
+    transition: transform 0.3s ease, position 0.3s ease; 
+}
 
-
-/* Sidebar text styling*/
+/* Sidebar text styling */
 .sidebar .sidebar-text {
     display: block;
     padding: 20px;
     color: black;
     text-decoration: none;
     font-size: 18px;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
 }
 
-/* Hover text styling when hover */
+/* Hover text styling */
 .sidebar .sidebar-text:hover {
-    background-color: red;  
-    color: white; 
-    
+    background-color: red;
+    color: white;
 }
 
-/* Stles to know what page you are on*/
-
-.sidebar-present{
+/* Sidebar present styling (for active page) */
+.sidebar-present {
     display: block;
     padding: 20px;
     color: aquamarine;
-background-color: gray;
+    background-color: gray;
     text-decoration: none;
     font-size: 18px;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
 }
 
-.sidebar-present:hover{
-    background-color: red;  
-    color: white; 
-
+.sidebar-present:hover {
+    background-color: red;
+    color: white;
 }
 
 
+sidebar-border;
 
+/* Menu Toggle Button */
+.menu-toggle {
+    position: absolute;
+    top: 10px;
+    left: 10px; 
+    z-index: 1100;
+    background-color: #a8f0ff;
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
+/* When the sidebar is hidden, adjust the toggle button */
+.sidebar.hidden .menu-toggle {
+    top: 10px;
+    left: 10px; 
+}
 
+/* Transition effect for the menu toggle */
+.menu-toggle i {
+    font-size: 20px;
+    color: black;
+}
 
+/* Main content area */
+#main-content {
+    margin-left: 120px;
+    transition: margin-left 0.3s ease; 
+}
 
+/* When the sidebar is hidden, shift the content to the left */
+.sidebar.hidden ~ #main-content {
+    margin-left: 0; 
+}
 
+/* Footer styles */
+.footer-bottom {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
 
-
-
-
-
-
-
+/* For larger screens (min-width: 769px) */
+@media (min-width: 769px) {
+    /* Hide the menu toggle button on larger screens */
+    .menu-toggle {
+        display: none;
+    }
+}

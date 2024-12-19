@@ -1,45 +1,17 @@
-/* Sidebar styles */
-.sidebar {
-  width: 120px;
-  background-color: #a8f0ff;
-  color: black;
-  position: fixed;
-  height: 100%;
-  padding-top: 20px;
-  text-align: center;
-  z-index: 1000;
-}
+/* Error: expected "{".
+ *    ,
+ * 55 | sidebar-border;
+ *    |               ^
+ *    '
+ *   scss\nav.scss 55:15  root stylesheet */
 
-/* Sidebar text styling*/
-.sidebar .sidebar-text {
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
-  padding: 20px;
-  color: black;
-  text-decoration: none;
-  font-size: 18px;
-  transition: all 0.3s ease;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a    \2577 \a 55 \2502  sidebar-border;\d\a    \2502                ^\a    \2575 \a   scss\\nav.scss 55:15  root stylesheet';
 }
-
-/* Hover text styling when hover */
-.sidebar .sidebar-text:hover {
-  background-color: red;
-  color: white;
-}
-
-/* Stles to know what page you are on*/
-.sidebar-present {
-  display: block;
-  padding: 20px;
-  color: aquamarine;
-  background-color: gray;
-  text-decoration: none;
-  font-size: 18px;
-  transition: all 0.3s ease;
-}
-
-.sidebar-present:hover {
-  background-color: red;
-  color: white;
-}
-
-/*# sourceMappingURL=nav.css.map */
