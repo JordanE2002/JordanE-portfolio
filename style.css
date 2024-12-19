@@ -1,47 +1,18 @@
-@use 'nav';
-
-@use 'homepage';
-@use 'projects';
-@use 'contact';
-@use 'about-me';
-@use 'coding-example';
-@use 'scheme';
-@use 'footer';
-
-
-@use 'layout';
-
-
-
-
-
-]
-
-
-
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?f5hu2r');
-  src:  url('../fonts/icomoon.eot?f5hu2r#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?f5hu2r') format('truetype'),
-    url('../fonts/icomoon.woff?f5hu2r') format('woff'),
-    url('../fonts/icomoon.svg?f5hu2r#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?f5hu2r');
+  src:  url('fonts/icomoon.eot?f5hu2r#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?f5hu2r') format('truetype'),
+    url('fonts/icomoon.woff?f5hu2r') format('woff'),
+    url('fonts/icomoon.svg?f5hu2r#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-
-
-
-
-
-/*All this is icon stuff, i do not want to mess with it */
-
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -356,5 +327,3 @@
 .icon-handshake-o:before {
   content: "\f2b5";
 }
-
-
