@@ -1,18 +1,1136 @@
-/* Error: expected "{".
- *    ,
- * 55 | sidebar-border;
- *    |               ^
- *    '
- *   scss\nav.scss 55:15  @use
- *   scss\main.scss 1:1   root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 55 \2502  sidebar-border;\d\a    \2502                ^\a    \2575 \a   scss\\nav.scss 55:15  @use\a   scss\\main.scss 1:1   root stylesheet';
+/* Sidebar styles */
+.sidebar {
+  width: 120px; /* Set width */
+  background-color: #a8f0ff;
+  color: black;
+  position: fixed;
+  height: 100%;
+  padding-top: 20px;
+  text-align: center;
+  z-index: 1000;
+  transform: translateX(0);
+  transition: transform 0.3s ease, position 0.3s ease;
 }
+
+/* Sidebar hidden styles */
+.sidebar.hidden {
+  transform: translateX(-150%);
+  position: absolute;
+  transition: transform 0.3s ease, position 0.3s ease;
+}
+
+/* Sidebar text styling */
+.sidebar .sidebar-text {
+  display: block;
+  padding: 20px;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  border-color: #1E555C;
+}
+
+/* Hover text styling */
+.sidebar .sidebar-text:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Sidebar present styling (for active page) */
+.sidebar-present {
+  display: block;
+  padding: 20px;
+  color: aquamarine;
+  background-color: gray;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.sidebar-present:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Menu Toggle Button */
+.menu-toggle {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1100;
+  background-color: #a8f0ff;
+  border: 1px solid #000;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* When the sidebar is hidden, adjust the toggle button */
+.sidebar.hidden .menu-toggle {
+  top: 10px;
+  left: 10px;
+}
+
+/* Transition effect for the menu toggle */
+.menu-toggle i {
+  font-size: 20px;
+  color: black;
+}
+
+/* Main content area */
+#main-content {
+  margin-left: 120px;
+  transition: margin-left 0.3s ease;
+}
+
+/* When the sidebar is hidden, shift the content to the left */
+.sidebar.hidden ~ #main-content {
+  margin-left: 0;
+}
+
+/* Footer styles */
+.footer-bottom {
+  position: relative;
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+/* For larger screens (min-width: 769px) */
+@media (min-width: 769px) {
+  /* Hide the menu toggle button on larger screens */
+  .menu-toggle {
+    display: none;
+  }
+}
+/* Keeps everything in line for now */
+#main-content {
+  margin-left: 120px;
+  flex: 1;
+  padding-bottom: 50px; /* Adds space at the bottom */
+}
+
+/* Trying to prevent overlapping */
+section {
+  padding: 50px 20px;
+  background-color: white;
+  color: black;
+  scroll-margin-top: 120px;
+}
+
+/* Header section */
+.header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Image for the header */
+.banner-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Text over the image */
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.header h1 {
+  font-size: 48px;
+  margin: 0;
+  color: white;
+}
+
+.header p {
+  font-size: 24px;
+  margin-top: 10px;
+  color: white;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Projects Container */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Each project item */
+.projects-item {
+  background-color: #a8f0ff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.projects-item h3 {
+  color: black;
+}
+
+/* Hover Effect */
+.projects-item:hover {
+  transform: translateY(-10px);
+  text-decoration: underline;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.contact-container {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  background-color: #a8f0ff;
+  box-sizing: border-box;
+}
+
+.input-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.input-group {
+  flex-basis: calc(50% - 20px);
+}
+
+/* Input styles*/
+input[type=text],
+input[type=email] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  font-family: "Times New Roman", Times, serif;
+  border-bottom: 1px solid white;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 98%;
+  resize: none;
+  padding: 10px;
+  border: none;
+  font-family: "Times New Roman", Times, serif;
+  border-bottom: 1px solid white;
+  box-sizing: border-box;
+}
+
+/* Button styles*/
+button {
+  background: orange;
+  text-align: center;
+  font-weight: bold;
+  width: 100px;
+  border: none;
+  outline: none;
+  height: 35px;
+  border-radius: 30px;
+  margin-top: 20px;
+  align-self: center;
+}
+
+/* Hover effect */
+button:hover {
+  cursor: pointer;
+}
+
+/* Button style when clicked*/
+button:active {
+  background-color: aquamarine;
+}
+
+/* Contact text styling */
+.contact-text h3 {
+  color: black;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* Flexbox container for the case studies */
+.about-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Flexbox item styling */
+.about-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  background-color: var(--default-white);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #a8f0ff;
+}
+
+/* Heading styling */
+.about-item h3 {
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+/* Paragraph styling */
+.about-item p {
+  font-weight: 300;
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  letter-spacing: 0.4px;
+  align-items: center;
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+}
+
+/* Box styles for differn't snippets*/
+.HTML {
+  background-color: red;
+  float: left;
+  width: 50%;
+  height: 200px;
+}
+
+.HTML h3 {
+  text-align: center;
+}
+
+.CSS {
+  background-color: yellow;
+  float: right;
+  width: 50%;
+  height: 200px;
+}
+
+.CSS h3 {
+  text-align: center;
+}
+
+.JAVA {
+  background-color: green;
+  float: left;
+  width: 50%;
+  height: 200px;
+}
+
+.JAVA h3 {
+  text-align: center;
+}
+
+.PHP {
+  background-color: blue;
+  float: right;
+  width: 50%;
+  height: 200px;
+}
+
+.PHP h3 {
+  text-align: center;
+}
+
+/* Flexbox container for the case studies */
+.scheme-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Flexbox item styling */
+.scheme-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  background-color: var(--default-white);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #a8f0ff;
+}
+
+/* Heading styling */
+.scheme-item h3 {
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+/* Paragraph styling */
+.scheme-item p {
+  font-weight: 300;
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  letter-spacing: 0.4px;
+  align-items: center;
+}
+
+/* list styling */
+.scheme-item li {
+  font-weight: 300;
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  letter-spacing: 0.4px;
+  text-align: left;
+}
+
+/* Buttons */
+.scheme-button {
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  color: var(--default-white);
+  background-color: #db8c0d;
+  border: none;
+  font-weight: 400;
+  margin: 10px auto;
+}
+
+/* Grey line */
+.horizontial-line {
+  width: 80%;
+  height: 1px;
+  background-color: #ddd;
+  margin: 15px auto;
+  border: none;
+}
+
+/*The footer bottom banner bit*/
+.footer-bottom {
+  background-color: aquamarine;
+  padding: 10px 0;
+  position: relative;
+  bottom: 100%;
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*Genral layout for the body*/
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-centered {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: black;
+}
+
+/* Hide my left sidebar and not shown for a second when having to go*/
+@media (max-width: 768px) {
+  .sidebar {
+    width: auto; /* Reduce sidebar width */
+    position: static;
+  }
+  .sidebar .sidebar-text, .sidebar-present {
+    font-size: 14px;
+    padding: 10px;
+  }
+  /* Make my image take the slider area top*/
+  .banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 0;
+  }
+  /* Adjust header text */
+  .header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+  }
+  .header h1 {
+    font-size: 36px;
+  }
+  .header p {
+    font-size: 18px;
+  }
+  /* Males the margin seen left 0 to make the image take that area */
+  #main-content {
+    margin-left: 0;
+  }
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  /* For the Contact Section */
+  .contact-container {
+    padding: 20px;
+  }
+  .contact-box {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 10px;
+    background-color: #a8f0ff;
+    color: black;
+  }
+  .input-group {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  /* Make the textarea and input fields more responsive */
+  .input-group input,
+  .input-group textarea {
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  /* Adjust Button */
+  button {
+    padding: 12px;
+    font-size: 14px;
+  }
+  /* For Projects Section */
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects-item {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .projects-item img {
+    width: 100%;
+    height: auto;
+  }
+  /* Adjust header text */
+  .header h1 {
+    font-size: 36px;
+  }
+  .header p {
+    font-size: 18px;
+  }
+  /* Banner image should still take full viewport */
+  .banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 0;
+  }
+}
+@media (max-width: 768px) {
+  /* --- Projects  section--- */
+  /*Makes the boxes stacked on smaller screens*/
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*Add limitts for better viewsing */
+  .projects-item {
+    width: 80%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  /*Makes images the same ratio and looks the same as the wider screens  */
+  .projects-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  /*Makes the h3 have a smaller title */
+  .projects-item h3 {
+    font-size: 18px;
+    color: black;
+    margin-top: 10px;
+  }
+  /* --- Contact section --- */
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*Just the box decorations */
+  .contact-box {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    box-sizing: border-box;
+    border: 1px solid silver;
+    border-radius: 10px;
+    background-color: #a8f0ff;
+    color: black;
+  }
+  /* input boxes styles */
+  .input-row {
+    display: flex;
+    flex-direction: column;
+  }
+  /*Space between the fields */
+  .input-group {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  /*Boxes layout */
+  .input-group input,
+  .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  /* Textarea details */
+  .input-group textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  /* Button details */
+  button {
+    width: 20%;
+    padding: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+  }
+}
+/*Media query for scheme section*/
+@media (max-width: 768px) {
+  .HTML {
+    background-color: red;
+    width: 100%;
+    height: 200px;
+  }
+  .CSS {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .JAVA {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .PHP {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+/*About me*/
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-item {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+}
+/*Scheme */
+@media (max-width: 768px) {
+  .scheme-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .scheme-item {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?f5hu2r");
+  src: url("../fonts/icomoon.eot?f5hu2r#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?f5hu2r") format("truetype"), url("../fonts/icomoon.woff?f5hu2r") format("woff"), url("../fonts/icomoon.svg?f5hu2r#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+/*All this is icon stuff, i do not want to mess with it */
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-envelope:before {
+  content: "\e901";
+}
+
+.icon-phone2:before {
+  content: "\e921";
+}
+
+.icon-mobile:before {
+  content: "\e922";
+}
+
+.icon-headphone:before {
+  content: "\e923";
+}
+
+.icon-cloud:before {
+  content: "\e924";
+}
+
+.icon-arrow-up:before {
+  content: "\e902";
+}
+
+.icon-arrow-down:before {
+  content: "\e907";
+}
+
+.icon-arrow-left:before {
+  content: "\e908";
+}
+
+.icon-arrow-right1:before {
+  content: "\e90c";
+}
+
+.icon-check-alt:before {
+  content: "\e90f";
+}
+
+.icon-x-altx-alt:before {
+  content: "\e910";
+}
+
+.icon-document-alt-stroke:before {
+  content: "\e911";
+}
+
+.icon-transfer:before {
+  content: "\e925";
+}
+
+.icon-headphones1:before {
+  content: "\e926";
+}
+
+.icon-iphone:before {
+  content: "\e927";
+}
+
+.icon-folder-stroke:before {
+  content: "\e912";
+}
+
+.icon-info:before {
+  content: "\e913";
+}
+
+.icon-comments:before {
+  content: "\e900";
+}
+
+.icon-star:before {
+  content: "\e90d";
+}
+
+.icon-grid:before {
+  content: "\e90e";
+}
+
+.icon-pencil:before {
+  content: "\e905";
+}
+
+.icon-book:before {
+  content: "\e91f";
+}
+
+.icon-phone:before {
+  content: "\e942";
+}
+
+.icon-address-book:before {
+  content: "\e944";
+}
+
+.icon-display:before {
+  content: "\e956";
+}
+
+.icon-laptop:before {
+  content: "\e957";
+}
+
+.icon-drive:before {
+  content: "\e963";
+}
+
+.icon-search:before {
+  content: "\e986";
+}
+
+.icon-stats-bars:before {
+  content: "\e99c";
+}
+
+.icon-stats-bars2:before {
+  content: "\e99d";
+}
+
+.icon-lab:before {
+  content: "\e9aa";
+}
+
+.icon-shield:before {
+  content: "\e9b4";
+}
+
+.icon-menu:before {
+  content: "\e9bd";
+}
+
+.icon-star-full:before {
+  content: "\e9d9";
+}
+
+.icon-wondering:before {
+  content: "\e9fb";
+}
+
+.icon-arrow-right:before {
+  content: "\ea3c";
+}
+
+.icon-checkbox-unchecked:before {
+  content: "\ea53";
+}
+
+.icon-embed:before {
+  content: "\ea80";
+}
+
+.icon-facebook:before {
+  content: "\ea90";
+}
+
+.icon-instagram:before {
+  content: "\ea92";
+}
+
+.icon-twitter:before {
+  content: "\ea96";
+}
+
+.icon-linkedin:before {
+  content: "\eac9";
+}
+
+.icon-chat:before {
+  content: "\e903";
+}
+
+.icon-cloud_download:before {
+  content: "\e914";
+}
+
+.icon-folder_open:before {
+  content: "\e915";
+}
+
+.icon-keyboard_arrow_down:before {
+  content: "\e916";
+}
+
+.icon-keyboard_arrow_left:before {
+  content: "\e917";
+}
+
+.icon-keyboard_arrow_right:before {
+  content: "\e918";
+}
+
+.icon-keyboard_arrow_up:before {
+  content: "\e919";
+}
+
+.icon-mouse1:before {
+  content: "\e904";
+}
+
+.icon-security:before {
+  content: "\e906";
+}
+
+.icon-phone_in_talk:before {
+  content: "\e928";
+}
+
+.icon-thumb_down_alt:before {
+  content: "\e91a";
+}
+
+.icon-thumb_up_alt:before {
+  content: "\e91b";
+}
+
+.icon-trending_up:before {
+  content: "\e929";
+}
+
+.icon-info-large:before {
+  content: "\e91c";
+}
+
+.icon-social-linkedin:before {
+  content: "\e91d";
+}
+
+.icon-github1:before {
+  content: "\e91e";
+}
+
+.icon-hard-drive:before {
+  content: "\e92a";
+}
+
+.icon-menu1:before {
+  content: "\e920";
+}
+
+.icon-cloud1:before {
+  content: "\e92b";
+}
+
+.icon-graduate:before {
+  content: "\e909";
+}
+
+.icon-paperplane:before {
+  content: "\e90a";
+}
+
+.icon-study:before {
+  content: "\e90b";
+}
+
+.icon-envelope-o:before {
+  content: "\f003";
+}
+
+.icon-star1:before {
+  content: "\f005";
+}
+
+.icon-clock-o:before {
+  content: "\f017";
+}
+
+.icon-download:before {
+  content: "\f019";
+}
+
+.icon-lock:before {
+  content: "\f023";
+}
+
+.icon-headphones:before {
+  content: "\f025";
+}
+
+.icon-text-width:before {
+  content: "\f035";
+}
+
+.icon-pencil1:before {
+  content: "\f040";
+}
+
+.icon-question-circle:before {
+  content: "\f059";
+}
+
+.icon-shopping-cart:before {
+  content: "\f07a";
+}
+
+.icon-folder-open:before {
+  content: "\f07c";
+}
+
+.icon-cogs:before {
+  content: "\f085";
+}
+
+.icon-gears:before {
+  content: "\f085";
+}
+
+.icon-linkedin-square:before {
+  content: "\f08c";
+}
+
+.icon-phone1:before {
+  content: "\f095";
+}
+
+.icon-phone-square:before {
+  content: "\f098";
+}
+
+.icon-github:before {
+  content: "\f09b";
+}
+
+.icon-bullhorn:before {
+  content: "\f0a1";
+}
+
+.icon-globe:before {
+  content: "\f0ac";
+}
+
+.icon-briefcase:before {
+  content: "\f0b1";
+}
+
+.icon-group:before {
+  content: "\f0c0";
+}
+
+.icon-users:before {
+  content: "\f0c0";
+}
+
+.icon-money:before {
+  content: "\f0d6";
+}
+
+.icon-linkedin1:before {
+  content: "\f0e1";
+}
+
+.icon-dashboard:before {
+  content: "\f0e4";
+}
+
+.icon-tachometer:before {
+  content: "\f0e4";
+}
+
+.icon-clipboard:before {
+  content: "\f0ea";
+}
+
+.icon-paste:before {
+  content: "\f0ea";
+}
+
+.icon-cloud-download:before {
+  content: "\f0ed";
+}
+
+.icon-laptop1:before {
+  content: "\f109";
+}
+
+.icon-ticket:before {
+  content: "\f145";
+}
+
+.icon-graduation-cap:before {
+  content: "\f19d";
+}
+
+.icon-mortar-board:before {
+  content: "\f19d";
+}
+
+.icon-file-code-o:before {
+  content: "\f1c9";
+}
+
+.icon-television:before {
+  content: "\f26c";
+}
+
+.icon-tv:before {
+  content: "\f26c";
+}
+
+.icon-handshake-o:before {
+  content: "\f2b5";
+}
+
+/*# sourceMappingURL=main.css.map */
