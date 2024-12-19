@@ -88,21 +88,10 @@
 }
 
 /* When the sidebar is hidden, shift the content to the left */
-.sidebar.hidden ~ #main-content {
+.sidebar.hidden, #main-content {
     margin-left: 0; 
 }
 
-/* Footer styles */
-.footer-bottom {
-    position: relative;
-    margin-top: 20px;
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-}
-
-/* For larger screens (min-width: 769px) */
 @media (min-width: 769px) {
     /* Hide the menu toggle button on larger screens */
     .menu-toggle {
