@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="css/main.css"> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 </head>
-
 <body>
 
+    
     <!-- Sidebar -->
     <nav class="sidebar">
         <div>
@@ -26,15 +26,21 @@
             <a href="coding-examples.html#coding-examples" class="sidebar-text">Coding Examples</a>
         </div>
         <a href="scheme.html#scheme" class="sidebar-text"></i>SCS Scheme</a>
+        
+
+
     </nav>
+    
 
-    <!-- Menu Toggle Button -->
-    <div class="menu-toggle">
-        <i class="icon-menu"></i>
-    </div>
+ <!-- Menu Toggle Button -->
+ <div class="menu-toggle">
+    <i class="icon-menu"></i> <!-- Hamburger menu icon -->
+</div>
 
-    <!-- Page Content -->
-    <section id="main-content">
+    
+
+     <!-- Page Content -->
+     <div id="main-content">
         <!-- Header -->
         <section id="home" class="header">
             <div class="header-content">
@@ -44,90 +50,114 @@
             <img src="images/sausage-dog.webp" alt="sausage-dog" class="banner-img">
         </section>
 
-        <!-- Projects Section -->
-        <section>
-            <h1 id="projects" class="title-centered">My Projects</h1>
-            <div class="projects-container">
-                <!-- Example Project items -->
-                <div class="projects-item">
-                    <img src="images/sausage-dog.webp" alt="Project 1">
-                    <h3>Project 1: Please view my work</h3>
-                </div>
-                <div class="projects-item">
-                    <img src="images/sausage-dog.webp" alt="Project 2">
-                    <h3>Project 2: Please view my work</h3>
-                </div>
-                <div class="projects-item">
-                    <img src="images/Testimg.webp" alt="Project 3">
-                    <h3>Project 3: Please view my work</h3>
-                </div>
-                
-                
-                <div class="projects-item">
-                    <img src="images/sausage-dog.webp" alt="Project 4">
-                    <h3>Project 4: A creative design project</h3>
-                </div>
-                <div class="projects-item">
-                    <img src="images/sausage-dog.webp" alt="Project 5">
-                    <h3>Project 5: A web development project</h3>
-                </div>
-                <div class="projects-item">
-                    <img src="images/Testimg.webp" alt="Project 6">
-                    <h3>Project 6: A mobile app development project</h3>
-                </div>
-            </div>
-        </section>
-        
-
-        <!-- Contact Section -->
-        <section>
-            <h1 id="contact" class="title-centered">Contact Form</h1>
-            <div class="contact-container">
-                <div class="contact-box">
-                    <div class="contact-text">
-                        <h3>Fill out your details</h3>
-                        <form name="contactForm" onsubmit="return validateForm()">
-                            <div class="input-row">
-                                <div class="input-group">
-                                    <input type="text" name="firstName" placeholder="First name">
-                                </div>
-                                <div class="input-group">
-                                    <input type="text" name="lastName" placeholder="Last name">
-                                </div>
-
-                                <div class="input-group">
-                                    <input type="email" name = "email" placeholder="Email">
-                                </div>
 
 
 
-                                <div class="input-group">
-                                    <input type="text" name = "subject" placeholder="Subject">
-                                </div>
-
-
-
-                                <textarea rows="5" name = "message" placeholder="Message"></textarea>
-
-
-                                <button type="submit" name ="formButton">Send</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        
-        </section>
-        
-    <!-- Footer -->
-    <footer class="footer-bottom">
-        <div class="footer-banner">
-            <p>&copy; Jordan English</p>
+ <!-- Projects Section -->
+ <section>
+    <h1 id="projects" class="title-centered">My Projects</h1>
+    <div class="projects-container">
+        <!-- Example Project items -->
+        <div class="projects-item">
+            <img src="images/sausage-dog.webp" alt="Project 1">
+            <h3>Project 1: Please view my work</h3>
         </div>
-    </footer>
+        <div class="projects-item">
+            <img src="images/sausage-dog.webp" alt="Project 2">
+            <h3>Project 2: Please view my work</h3>
+        </div>
+        <div class="projects-item">
+            <img src="images/Testimg.webp" alt="Project 3">
+            <h3>Project 3: Please view my work</h3>
+        </div>
+        
+        
+        <div class="projects-item">
+            <img src="images/sausage-dog.webp" alt="Project 4">
+            <h3>Project 4: A creative design project</h3>
+        </div>
+        <div class="projects-item">
+            <img src="images/sausage-dog.webp" alt="Project 5">
+            <h3>Project 5: A web development project</h3>
+        </div>
+        <div class="projects-item">
+            <img src="images/Testimg.webp" alt="Project 6">
+            <h3>Project 6: A mobile app development project</h3>
+        </div>
+    </div>
+</section>
 
-    <!-- Script -->
-    <script src="java/main.js"></script>
+
+
+
+
+
+
+
+
+<!-- Contact Section -->
+<section>
+    <h1 id="contact" class="title-centered">Contact Form</h1>
+    <div class="contact-container">
+        <div class="contact-box">
+            <div class="contact-text">
+                <h3>Fill out your details</h3>
+                <form name="contactForm" onsubmit="return validateForm()">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <input type="text" name="firstName" placeholder="First name">
+                        </div>
+                        <div class="input-group">
+                            <input type="text" name="lastName" placeholder="Last name">
+                        </div>
+
+                        <div class="input-group">
+                            <input type="email" name = "email" placeholder="Email">
+                        </div>
+
+
+
+                        <div class="input-group">
+                            <input type="text" name = "subject" placeholder="Subject">
+                        </div>
+
+
+
+                        <textarea rows="5" name = "message" placeholder="Message"></textarea>
+
+
+                        <button type="submit" name ="formButton">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+</section>
+
+
+
+
+
+
+    
+
+
+
+
+
+
+</div>
+
+    <!-- Footer -->
+  <footer class="footer">
+
+        <p>&copy; Jordan English</p>
+    
+</footer>
+
+<script src="java/main.js"></script>
+
 </body>
-
 </html>

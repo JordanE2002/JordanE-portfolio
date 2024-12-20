@@ -445,10 +445,10 @@ button:active {
   border: none;
 }
 
-.footer-bottom {
+.footer {
   background-color: aquamarine;
   padding: 10px 0;
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
