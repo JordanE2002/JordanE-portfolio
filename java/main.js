@@ -64,7 +64,9 @@ window.addEventListener('resize', adjustSidebarVisibility);
 // Set initial sidebar visibility based on the current window size
 adjustSidebarVisibility();
 
-function validateForm(event) {
+
+
+function validateForm() {
     // Get the value of each field
     let firstName = document.forms["contactForm"]["firstName"].value;
     let lastName = document.forms["contactForm"]["lastName"].value;
@@ -74,51 +76,63 @@ function validateForm(event) {
 
     const nameRegex = /^[A-Za-z]+$/;  // Regular expression for validating names (only letters)
 
+    let isValid = true; // Flag to check overall form validity
+
     // Check if each field is empty and provide specific error messages
     if (firstName === "") {
         alert("First Name needs to be filled out.");
-        event.preventDefault(); // Prevent form submission
-        return false;
+        isValid = false;
     }
 
     if (lastName === "") {
         alert("Last Name needs to be filled out.");
-        event.preventDefault(); // Prevent form submission
-        return false;
+        isValid = false;
     }
 
     if (email === "") {
         alert("Email needs to be filled out.");
-        event.preventDefault(); // Prevent form submission
-        return false;
+        isValid = false;
     }
 
     if (subject === "") {
         alert("Subject needs to be filled out.");
-        event.preventDefault(); // Prevent form submission
-        return false;
+        isValid = false;
     }
 
     if (message === "") {
         alert("Message needs to be filled out.");
-        event.preventDefault(); // Prevent form submission
-        return false;
+        isValid = false;
     }
 
     // Validate first name (only letters)
-    if (!nameRegex.test(firstName)) {
+    if (!nameRegex.test(firstName) && firstName !== "") {
         alert("First name must contain only letters and no special characters or numbers.");
-        event.preventDefault(); // Prevent form submission
-        return false;
+        isValid = false;
     }
 
     // Validate last name (only letters)
-    if (!nameRegex.test(lastName)) {
+    if (!nameRegex.test(lastName) && lastName !== "") {
         alert("Last name must contain only letters and no special characters or numbers.");
-        event.preventDefault(); // Prevent form submission
-        return false;
+        isValid = false;
+    }
+
+    // If validation fails, prevent form submission
+    if (!isValid) {
+        return false; // Prevents form submission
     }
 
     // If validation passes, allow form submission
     return true;
 }
+
+// Attach the validation to the form's onsubmit event
+document.forms["contactForm"].onsubmit = function (event) {
+    if (!validateForm()) {
+        event.preventDefault(); // Prevent form submission on validation failure
+    }
+    else{
+        event.preventDefault();
+alert("Contact form submitted")
+    }
+    }
+
