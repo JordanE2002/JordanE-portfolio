@@ -64,8 +64,7 @@ window.addEventListener('resize', adjustSidebarVisibility);
 // Set initial sidebar visibility based on the current window size
 adjustSidebarVisibility();
 
-
-function validateForm() {
+function validateForm(event) {
     // Get the value of each field
     let firstName = document.forms["contactForm"]["firstName"].value;
     let lastName = document.forms["contactForm"]["lastName"].value;
@@ -78,42 +77,48 @@ function validateForm() {
     // Check if each field is empty and provide specific error messages
     if (firstName === "") {
         alert("First Name needs to be filled out.");
-        return false; // Prevent form submission
+        event.preventDefault(); // Prevent form submission
+        return false;
     }
 
     if (lastName === "") {
         alert("Last Name needs to be filled out.");
-        return false; // Prevent form submission
+        event.preventDefault(); // Prevent form submission
+        return false;
     }
 
     if (email === "") {
         alert("Email needs to be filled out.");
-        return false; // Prevent form submission
+        event.preventDefault(); // Prevent form submission
+        return false;
     }
 
     if (subject === "") {
         alert("Subject needs to be filled out.");
-        return false; // Prevent form submission
+        event.preventDefault(); // Prevent form submission
+        return false;
     }
 
     if (message === "") {
         alert("Message needs to be filled out.");
-        return false; // Prevent form submission
+        event.preventDefault(); // Prevent form submission
+        return false;
     }
 
     // Validate first name (only letters)
     if (!nameRegex.test(firstName)) {
         alert("First name must contain only letters and no special characters or numbers.");
-        return false; // Prevent form submission
+        event.preventDefault(); // Prevent form submission
+        return false;
     }
 
-     // Validate first name (only letters)
-     if (!nameRegex.test(lastName)) {
+    // Validate last name (only letters)
+    if (!nameRegex.test(lastName)) {
         alert("Last name must contain only letters and no special characters or numbers.");
-        return false; // Prevent form submission
+        event.preventDefault(); // Prevent form submission
+        return false;
     }
 
-    
-
-    return true; // Allow form submission if all checks pass
+    // If validation passes, allow form submission
+    return true;
 }
