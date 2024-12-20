@@ -66,25 +66,54 @@ adjustSidebarVisibility();
 
 
 function validateForm() {
-    // Get the value of the first name field
+    // Get the value of each field
     let firstName = document.forms["contactForm"]["firstName"].value;
     let lastName = document.forms["contactForm"]["lastName"].value;
     let subject = document.forms["contactForm"]["subject"].value;
     let email = document.forms["contactForm"]["email"].value;
-    
+    let message = document.forms["contactForm"]["message"].value;
 
+    const nameRegex = /^[A-Za-z]+$/;  // Regular expression for validating names (only letters)
 
-    // Check if the field is empty
-    if (firstName === "" || lastName === ""  || subject === "") {
-        alert("All fields meed to be filled out");
+    // Check if each field is empty and provide specific error messages
+    if (firstName === "") {
+        alert("First Name needs to be filled out.");
+        return false; // Prevent form submission
+    }
+
+    if (lastName === "") {
+        alert("Last Name needs to be filled out.");
         return false; // Prevent form submission
     }
 
     if (email === "") {
-        alert("Email must be filled out");
+        alert("Email needs to be filled out.");
         return false; // Prevent form submission
+    }
 
-   
-}
-return true; // Allow form submission
+    if (subject === "") {
+        alert("Subject needs to be filled out.");
+        return false; // Prevent form submission
+    }
+
+    if (message === "") {
+        alert("Message needs to be filled out.");
+        return false; // Prevent form submission
+    }
+
+    // Validate first name (only letters)
+    if (!nameRegex.test(firstName)) {
+        alert("First name must contain only letters and no special characters or numbers.");
+        return false; // Prevent form submission
+    }
+
+     // Validate first name (only letters)
+     if (!nameRegex.test(lastName)) {
+        alert("Last name must contain only letters and no special characters or numbers.");
+        return false; // Prevent form submission
+    }
+
+    
+
+    return true; // Allow form submission if all checks pass
 }
