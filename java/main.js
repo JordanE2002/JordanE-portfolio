@@ -69,13 +69,20 @@ function validateForm() {
     // Get the value of the first name field
     let firstName = document.forms["contactForm"]["firstName"].value;
     let lastName = document.forms["contactForm"]["lastName"].value;
+    let subject = document.forms["contactForm"]["subject"].value;
+    let email = document.forms["contactForm"]["email"].value;
     
 
     // Check if the field is empty
-    if (firstName === "" || lastName === "") {
-        alert("First name must be filled out");
+    if (firstName === "" || lastName === ""  || subject === "") {
+        alert("All fields meed to be filled out");
         return false; // Prevent form submission
     }
+    if (email === "") {
+        alert("Email must be filled out");
+        return false; // Prevent form submission
 
-    return true; // Allow form submission
+   
+}
+return true; // Allow form submission
 }

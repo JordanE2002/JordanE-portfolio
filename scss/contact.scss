@@ -16,6 +16,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    
 }
 
 .input-group {
@@ -33,6 +34,7 @@ input[type="email"]
     border-bottom: 1px solid white;
     box-sizing: border-box;
 }
+
 
 textarea {
     width: 98%;
