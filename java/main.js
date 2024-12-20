@@ -63,3 +63,19 @@ window.addEventListener('resize', adjustSidebarVisibility);
 
 // Set initial sidebar visibility based on the current window size
 adjustSidebarVisibility();
+
+
+function validateForm() {
+    // Get the value of the first name field
+    let firstName = document.forms["contactForm"]["firstName"].value;
+    let lastName = document.forms["contactForm"]["lastName"].value;
+    
+
+    // Check if the field is empty
+    if (firstName === "" || lastName === "") {
+        alert("First name must be filled out");
+        return false; // Prevent form submission
+    }
+
+    return true; // Allow form submission
+}

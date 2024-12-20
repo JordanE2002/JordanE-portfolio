@@ -71,13 +71,13 @@
                 <div class="contact-box">
                     <div class="contact-text">
                         <h3>Fill out your details</h3>
-                        <form>
+                        <form name="contactForm" onsubmit="return validateForm()">
                             <div class="input-row">
                                 <div class="input-group">
-                                    <input type="text" placeholder="First name">
+                                    <input type="text" name="firstName" placeholder="First name">
                                 </div>
                                 <div class="input-group">
-                                    <input type="text" placeholder="Last name">
+                                    <input type="text" name="lastName" placeholder="Last name">
                                 </div>
                                 <div class="input-group">
                                     <input type="email" placeholder="Email">
@@ -93,8 +93,7 @@
                 </div>
             </div>
         </section>
-    </div>
-
+        
     <!-- Footer -->
     <footer class="footer-bottom">
         <div class="footer-banner">
