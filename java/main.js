@@ -73,11 +73,13 @@ function validateForm() {
     let email = document.forms["contactForm"]["email"].value;
     
 
+
     // Check if the field is empty
     if (firstName === "" || lastName === ""  || subject === "") {
         alert("All fields meed to be filled out");
         return false; // Prevent form submission
     }
+
     if (email === "") {
         alert("Email must be filled out");
         return false; // Prevent form submission
