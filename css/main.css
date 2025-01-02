@@ -27,8 +27,9 @@
   text-decoration: none;
   font-size: 18px;
   transition: all 0.3s ease;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   border-color: #1E555C;
+  margin-top: 1px;
 }
 
 /* Hover text styling */
@@ -46,10 +47,6 @@
   text-decoration: none;
   font-size: 18px;
   transition: all 0.3s ease;
-  border: 1px solid transparent;
-  border-bottom: 50px;
-  border-top: 50px;
-  border-color: #1E555C;
 }
 
 .sidebar-present:hover {
@@ -515,6 +512,34 @@ button:active {
   bottom: 0;
   width: 100%;
   text-align: center;
+}
+
+/*Was not sure where to put contsent info, so i left it here */
+/* Styling for button */
+#consent {
+  position: fixed;
+  line-height: 22px;
+  z-index: 99;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  background: #75788a;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: white;
+  border: solid #75788a;
+  border-width: 1px 1px 0 0;
+  border-radius: 0;
+  border-top-right-radius: 10px;
+  padding: 0 10px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+/* Hover effort for button */
+#consent:hover {
+  background-color: #6b6d7f;
+  border-color: #6b6d7f;
 }
 
 html {

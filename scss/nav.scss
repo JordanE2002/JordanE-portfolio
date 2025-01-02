@@ -10,6 +10,8 @@
     z-index: 1000;
     transform: translateX(0); 
     transition: transform 0.3s ease, position 0.3s ease; 
+    
+    
 }
 
 /* Sidebar hidden styles */
@@ -27,8 +29,9 @@
     text-decoration: none;
     font-size: 18px;
     transition: all 0.3s ease;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     border-color: #1E555C;
+    margin-top: 1px;
 }
 
 /* Hover text styling */
@@ -46,12 +49,7 @@
     text-decoration: none;
     font-size: 18px;
     transition: all 0.3s ease;
-    border: 1px solid transparent;
-    border-bottom: 50px;
-    border-top: 50px;
-    border-color: #1E555C;
 }
-
 
 .sidebar-present:hover {
     background-color: red;
