@@ -74,10 +74,11 @@ function validateForm() {
     let email = document.forms["contactForm"]["email"].value;
     let message = document.forms["contactForm"]["message"].value;
 
-    const nameRegex = /^[A-Za-z]+$/;  // Regular expression for validating names (only letters)
+    const nameRegex = /^[A-Za-z]+$/; //Regex for the names
 
 
-     
+     // Regex for the email
+     const emailRegex = /^[a-zA-Z0-9_+&*-]+(?:\.[a-zA-Z0-9_+&*-]+)*@(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,7}$/;
 
     let isValid = true; // Flag to check overall form validity
 
@@ -119,6 +120,10 @@ function validateForm() {
         isValid = false;
     }
 
+    if (!emailRegex.test(email) && email !== "") {
+        alert("Email must be valid.");
+        isValid = false;
+    }
 
 
 
