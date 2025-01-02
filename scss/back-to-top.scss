@@ -1,32 +1,31 @@
-
-/*Was not sure where to put contsent info, so i left it here */
-
-/* Styling for button */
-#consent {
+/* Styling for consent button */
+#back-to-top {
     position: fixed;
-    line-height: 22px;
-    z-index: 99;
     bottom: 0;
     left: 0;
+    z-index: 9999; /* Higher z-index to ensure it shows on top of other elements */
     display: flex;
+    align-items: center; 
+    justify-content: center; 
     background: #75788a;
-    font-weight: 600;
-    text-transform: capitalize;
-    color: white;
     border: solid #75788a;
     border-width: 1px 1px 0 0;
     border-radius: 0;
     border-top-right-radius: 10px;
-    padding: 0 10px;
+    padding: 10px 20px; /* Add more padding for a larger button */
     cursor: pointer;
-    font-size: .8rem;
 }
 
+/* Font-related styling */
+#back-to-top a{
+    font-weight: 600;
+    text-transform: capitalize;
+    color: white;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
 
-
-/* Hover effort for button */
-#consent:hover {
-    background-color: #6b6d7f; 
-    border-color: #6b6d7f  
-    
+/* Hover effect for button */
+#back-to-top:hover {
+    background-color: #6b6d7f;
 }
