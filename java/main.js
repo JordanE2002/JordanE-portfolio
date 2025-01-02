@@ -76,6 +76,9 @@ function validateForm() {
 
     const nameRegex = /^[A-Za-z]+$/;  // Regular expression for validating names (only letters)
 
+
+     
+
     let isValid = true; // Flag to check overall form validity
 
     // Check if each field is empty and provide specific error messages
@@ -116,6 +119,9 @@ function validateForm() {
         isValid = false;
     }
 
+
+
+
     // If validation fails, prevent form submission
     if (!isValid) {
         return false; // Prevents form submission
@@ -133,6 +139,14 @@ document.forms["contactForm"].onsubmit = function (event) {
     else{
         event.preventDefault();
 alert("Contact form submitted")
+
+ // Clear the fields
+ document.forms["contactForm"]["firstName"].value = "";
+ document.forms["contactForm"]["lastName"].value = "";
+ document.forms["contactForm"]["email"].value = "";
+ document.forms["contactForm"]["subject"].value = "";
+ document.forms["contactForm"]["message"].value = "";
+
     }
     }
 
