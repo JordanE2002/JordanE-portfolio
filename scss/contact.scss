@@ -77,64 +77,6 @@ button:active {
     font-family: 'Times New Roman', Times, serif;
 }
 
-/* New styling for the Projects Section */
-
-/* Projects Container */
-.projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-/* Each project item */
-.projects-item {
-    background-color: #a8f0ff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative; /* Needed for positioning the link */
-    cursor: pointer; /* Ensures the box appears clickable */
-}
-
-/* Styling for the images inside the project item */
-.projects-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-/* Styling for the text inside the project item */
-.projects-item h3 {
-    color: black;
-    margin: 10px 0; /* Some margin for spacing */
-}
-
-/* Hover Effect */
-.projects-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* New Styling for the Hidden Anchor Link */
-.projects-link {
-    position: absolute;  /* Position it to cover the entire project box */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: block; /* Make the anchor tag fill the whole area */
-    text-decoration: none; /* Remove default underline */
-    z-index: 1; /* Make sure the link sits above other elements */
-}
-
-/* Optional: Add hover effect to the link itself */
-.projects-link:hover {
-    text-decoration: none; /* Optional: Prevent underline on hover */
-}
 
 
 
