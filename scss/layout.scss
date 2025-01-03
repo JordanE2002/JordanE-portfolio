@@ -1,6 +1,8 @@
 html {
     scroll-behavior: smooth;
   }
+
+
 /*Genral layout for the body*/
 body {
     font-family: "Montserrat", sans-serif;
@@ -26,7 +28,7 @@ body {
       
         @media (max-width: 768px) {
             .sidebar {
-                width: auto;  /* Reduce sidebar width */
+                width: auto;  
                 position: static;
             }
         

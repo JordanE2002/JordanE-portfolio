@@ -31,7 +31,7 @@
 /* Styling for the text inside the project item */
 .projects-item h3 {
     color: black;
-    margin: 10px 0; /* Some margin for spacing */
+    margin: 10px 0;
 }
 
 /* Hover Effect */
@@ -40,19 +40,19 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* New Styling for the Hidden Anchor Link */
+/* anchor tags for the whole box in projects */
 .projects-link {
-    position: absolute;  /* Position it to cover the entire project box */
+    position: absolute;  
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    display: block; /* Make the anchor tag fill the whole area */
-    text-decoration: none; /* Remove default underline */
-    z-index: 1; /* Make sure the link sits above other elements */
+    display: block; 
+    text-decoration: none; 
+    z-index: 1; 
 }
 
-/* Optional: Add hover effect to the link itself */
+
 .projects-link:hover {
-    text-decoration: none; /* Optional: Prevent underline on hover */
+    text-decoration: none;
 }
