@@ -22,7 +22,7 @@ body {
 /* Hide my left sidebar and not shown for a second when having to go*/
 @media (max-width: 768px) {
   .sidebar {
-    width: auto; /* Reduce sidebar width */
+    width: auto;
     position: static;
   }
   .sidebar .sidebar-text, .sidebar-present {

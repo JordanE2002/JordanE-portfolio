@@ -29,3 +29,14 @@
 #back-to-top:hover {
     background-color: #BBB193;
 }
+
+ 
+@media (max-width: 768px) {
+    #back-to-top {
+        padding: 5px 10px;   
+    
+    }
+    #back-to-top a {
+        font-size: 1rem; 
+    }
+}

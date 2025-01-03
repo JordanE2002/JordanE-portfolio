@@ -1,6 +1,6 @@
 /* Sidebar styles */
 .sidebar {
-  width: 120px; /* Set width */
+  width: 120px;
   background-color: #a8f0ff;
   color: black;
   position: fixed;
@@ -54,7 +54,7 @@
   color: white;
 }
 
-/* Menu Toggle Button */
+/* Menu toggle */
 .menu-toggle {
   position: absolute;
   top: 10px;
@@ -91,7 +91,6 @@
 }
 
 @media (min-width: 769px) {
-  /* Hide the menu toggle button on larger screens */
   .menu-toggle {
     display: none;
   }

@@ -2,7 +2,7 @@
 #main-content {
   margin-left: 120px;
   flex: 1;
-  padding-bottom: 50px; /* Adds space at the bottom */
+  padding-bottom: 50px;
 }
 
 /* Trying to prevent overlapping */

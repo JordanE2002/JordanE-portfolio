@@ -1,6 +1,6 @@
 /* Sidebar styles */
 .sidebar {
-  width: 120px; /* Set width */
+  width: 120px;
   background-color: #a8f0ff;
   color: black;
   position: fixed;
@@ -54,7 +54,7 @@
   color: white;
 }
 
-/* Menu Toggle Button */
+/* Menu toggle */
 .menu-toggle {
   position: absolute;
   top: 10px;
@@ -91,7 +91,6 @@
 }
 
 @media (min-width: 769px) {
-  /* Hide the menu toggle button on larger screens */
   .menu-toggle {
     display: none;
   }
@@ -100,7 +99,7 @@
 #main-content {
   margin-left: 120px;
   flex: 1;
-  padding-bottom: 50px; /* Adds space at the bottom */
+  padding-bottom: 50px;
 }
 
 /* Trying to prevent overlapping */
@@ -184,7 +183,7 @@ section {
 /* Styling for the text inside the project item */
 .projects-item h3 {
   color: black;
-  margin: 10px 0; /* Some margin for spacing */
+  margin: 10px 0;
 }
 
 /* Hover Effect */
@@ -193,21 +192,20 @@ section {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* New Styling for the Hidden Anchor Link */
+/* anchor tags for the whole box in projects */
 .projects-link {
-  position: absolute; /* Position it to cover the entire project box */
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  display: block; /* Make the anchor tag fill the whole area */
-  text-decoration: none; /* Remove default underline */
-  z-index: 1; /* Make sure the link sits above other elements */
+  display: block;
+  text-decoration: none;
+  z-index: 1;
 }
 
-/* Optional: Add hover effect to the link itself */
 .projects-link:hover {
-  text-decoration: none; /* Optional: Prevent underline on hover */
+  text-decoration: none;
 }
 
 .contact-container {
@@ -503,6 +501,14 @@ button:active {
   background-color: #BBB193;
 }
 
+@media (max-width: 768px) {
+  #back-to-top {
+    padding: 5px 10px;
+  }
+  #back-to-top a {
+    font-size: 1rem;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -527,7 +533,7 @@ body {
 /* Hide my left sidebar and not shown for a second when having to go*/
 @media (max-width: 768px) {
   .sidebar {
-    width: auto; /* Reduce sidebar width */
+    width: auto;
     position: static;
   }
   .sidebar .sidebar-text, .sidebar-present {
