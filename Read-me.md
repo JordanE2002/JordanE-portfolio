@@ -1,1 +1,1 @@
-The only thing i should add is a variable scss page, i would have added it but i am not even sure if i will use all the colors or fonts so thats why as a whole its been quite gneneric like colours pink, blue etc and mostly not like #cccddd for example
+s far as i can ee there is not any bugs or issues visable, i will keep looking but i nthink i almost finished in the html/css and java
