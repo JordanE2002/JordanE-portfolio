@@ -471,36 +471,36 @@ button:active {
   text-align: center;
 }
 
-/* Styling for consent button */
+/* Styling for back to top button button */
 #back-to-top {
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: 9999; /* Higher z-index to ensure it shows on top of other elements */
+  z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #75788a;
-  border: solid #75788a;
+  background: #edfbc1;
+  border: solid #edfbc1;
   border-width: 1px 1px 0 0;
   border-radius: 0;
   border-top-right-radius: 10px;
-  padding: 10px 20px; /* Add more padding for a larger button */
+  padding: 10px 20px;
   cursor: pointer;
 }
 
 /* Font-related styling */
 #back-to-top a {
-  font-weight: 600;
+  font-weight: 800;
   text-transform: capitalize;
-  color: white;
-  font-size: 0.8rem;
+  color: back;
+  font-size: 2rem;
   text-decoration: none;
 }
 
 /* Hover effect for button */
 #back-to-top:hover {
-  background-color: #6b6d7f;
+  background-color: #BBB193;
 }
 
 html {
