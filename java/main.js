@@ -1,7 +1,7 @@
 // Wait for the page to load fully before running the code
 document.addEventListener("DOMContentLoaded", () => {
 
-    // ------------------- TYPEWRITER EFFECT -------------------
+    //Type writer 
     const introText = "Hello, I am Jordan English.";  // Text to type into the <h1>
     const portfolioDesc = "This is my Portfolio.";   // Text to type into the <p>
 
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // Prepare: Clear text content before starting
+    // Gets rid of text before starting
     introElement.textContent = "";
     portfolioElement.textContent = "";
 
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-// ------------------- NAVBAR TOGGLE -------------------
+// Nav bar slider
 const toggleButton = document.querySelector('.menu-toggle');
 const sidebarMenu = document.querySelector('.sidebar');
 
@@ -66,92 +66,111 @@ adjustSidebarVisibility();
 
 
 
+
+
+
+
+
+
 function validateForm() {
-    // Get the value of each field
-    let firstName = document.forms["contactForm"]["firstName"].value;
-    let lastName = document.forms["contactForm"]["lastName"].value;
-    let subject = document.forms["contactForm"]["subject"].value;
-    let email = document.forms["contactForm"]["email"].value;
-    let message = document.forms["contactForm"]["message"].value;
+    // Fetches each field item in contact
+    let firstNameField = document.forms["contactForm"]["firstName"];
+    let firstName = firstNameField.value;
+    let lastNameField = document.forms["contactForm"]["lastName"];
+    let lastName = lastNameField.value;
+    let subjectField = document.forms["contactForm"]["subject"];
+    let subject = subjectField.value;
+    let emailField = document.forms["contactForm"]["email"];
+    let email = emailField.value;
+    let messageField = document.forms["contactForm"]["message"];
+    let message = messageField.value;
 
-    const nameRegex = /^[A-Za-z]+$/; //Regex for the names
 
-
-     // Regex for the email
-     const emailRegex = /^[a-zA-Z0-9_+&*-]+(?:\.[a-zA-Z0-9_+&*-]+)*@(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,7}$/;
+//Regex for name and email
+    const nameRegex = /^[A-Za-z]+$/; 
+    const emailRegex = /^[a-zA-Z0-9_+&*-]+(?:\.[a-zA-Z0-9_+&*-]+)*@(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,7}$/;
 
     let isValid = true; // Flag to check overall form validity
 
-    // Check if each field is empty and provide specific error messages
+    // Resets any previous error styles
+    firstNameField.style.border = "";
+    lastNameField.style.border = "";
+    subjectField.style.border = "";
+    emailField.style.border = "";
+    messageField.style.border = "";
+
+    // If filed is empty then red border
     if (firstName === "") {
-        alert("First Name needs to be filled out.");
+        firstNameField.style.border = "2px solid red";
         isValid = false;
     }
 
     if (lastName === "") {
-        alert("Last Name needs to be filled out.");
+        lastNameField.style.border = "2px solid red";
         isValid = false;
     }
 
     if (email === "") {
-        alert("Email needs to be filled out.");
+        emailField.style.border = "2px solid red";
         isValid = false;
     }
 
     if (subject === "") {
-        alert("Subject needs to be filled out.");
+        subjectField.style.border = "2px solid red";
         isValid = false;
     }
 
     if (message === "") {
-        alert("Message needs to be filled out.");
+        messageField.style.border = "2px solid red";
         isValid = false;
     }
 
-    // Validate first name (only letters)
+    // If boxes have numbers in first name for example a red border
     if (!nameRegex.test(firstName) && firstName !== "") {
-        alert("First name must contain only letters and no special characters or numbers.");
+        alert("Only use letters for first name");
         isValid = false;
     }
 
-    // Validate last name (only letters)
+  
     if (!nameRegex.test(lastName) && lastName !== "") {
-        alert("Last name must contain only letters and no special characters or numbers.");
+        lastNameField.style.border = "2px solid red";
         isValid = false;
     }
 
     if (!emailRegex.test(email) && email !== "") {
-        alert("Email must be valid.");
+        emailField.style.border = "2px solid red";
         isValid = false;
     }
 
-
-
-    // If validation fails, prevent form submission
+    // Does not submit if any issues
     if (!isValid) {
-        return false; // Prevents form submission
+        return false;
     }
 
-    // If validation passes, allow form submission
+    // If no errors, you can submit
     return true;
 }
 
 // Attach the validation to the form's onsubmit event
 document.forms["contactForm"].onsubmit = function (event) {
     if (!validateForm()) {
-        event.preventDefault(); // Prevent form submission on validation failure
-    }
-    else{
         event.preventDefault();
-alert("Contact form submitted")
+    } else {
+        event.preventDefault();
+        alert("Contact form submitted");
 
- // Clear the fields
- document.forms["contactForm"]["firstName"].value = "";
- document.forms["contactForm"]["lastName"].value = "";
- document.forms["contactForm"]["email"].value = "";
- document.forms["contactForm"]["subject"].value = "";
- document.forms["contactForm"]["message"].value = "";
+        // Clear the fields of text
+        document.forms["contactForm"]["firstName"].value = "";
+        document.forms["contactForm"]["lastName"].value = "";
+        document.forms["contactForm"]["email"].value = "";
+        document.forms["contactForm"]["subject"].value = "";
+        document.forms["contactForm"]["message"].value = "";
 
+        // Makes the red borders normal again
+        document.forms["contactForm"]["firstName"].style.border = "";
+        document.forms["contactForm"]["lastName"].style.border = "";
+        document.forms["contactForm"]["email"].style.border = "";
+        document.forms["contactForm"]["subject"].style.border = "";
+        document.forms["contactForm"]["message"].style.border = "";
     }
-    }
-
+};
