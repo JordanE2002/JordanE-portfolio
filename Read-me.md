@@ -1,1 +1,1 @@
-s far as i can ee there is not any bugs or issues visable, i will keep looking but i nthink i almost finished in the html/css and java
+s far as i can ee there is not any bugs or issues visable, i will keep looking but i nthink i almost finished in the html/css and java. Everything seems to be in good shape
