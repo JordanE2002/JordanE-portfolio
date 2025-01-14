@@ -99,7 +99,7 @@ function validateForm() {
     emailField.style.border = "";
     messageField.style.border = "";
 
-    // If filed is empty then red border
+    // If filed completly empty then red border
     if (firstName === "") {
         firstNameField.style.border = "2px solid red";
         isValid = false;
