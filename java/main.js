@@ -127,7 +127,7 @@ function validateForm() {
 
     // If boxes have numbers in first name for example a red border
     if (!nameRegex.test(firstName) && firstName !== "") {
-        alert("Only use letters for first name");
+        firstNameField.style.border = "2px solid red";
         isValid = false;
     }
 
